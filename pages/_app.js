@@ -1,4 +1,3 @@
-import 'typeface-source-sans-pro';
 import 'typeface-inter';
 import PropTypes from 'prop-types';
 
