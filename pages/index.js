@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 
 export default function IndexPage() {
   return (
@@ -23,15 +22,17 @@ export default function IndexPage() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="h-screen flex justify-center items-center bg-gradient-to-r from-gray-200 to-white">
+      <div className="h-3/4 flex justify-center items-center bg-blue-100 p-8">
         <div className="max-w-screen-xl">
-
-
           <div className="md:flex">
+            <div className="max-w-xl p-4">
+            
+              {/* <img className="tilt shadow-md rounded-sm" src="/gif.gif"></img> */}
+            </div>
             <div className="flex-1 p-8 flex items-center">
               <div className="">
-                <h1 className="text-6xl tracking-tight font-bold font-logo text-gray-900 leading-none">
-                  V1
+                <h1 className="text-6xl tracking-tight font-bold font-logo text-gray-900 leading-none" >
+                  V1 Product Studio
                 </h1>
                 <h2 className="text-2xl tracking-tight font-bold italic text-gradient bg-gradient-to-r from-yellow-600 to-yellow-700">
                   at Michigan
@@ -42,18 +43,15 @@ export default function IndexPage() {
                 </p>
               </div>
             </div>
-            <div className="max-w-xl p-4">
-              <img className="tilt shadow-md rounded-sm" src="/gif.gif"></img>
-            </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-gray-900 to-black">
+      {/* <div className="bg-gradient-to-r from-gray-900 to-black">
         <p className="footer text-gray-200 text-center py-8">
           &copy; 2021 V1 | team@v1michigan.com
         </p>
-      </div>
+      </div> */}
     </main>
   );
 }
