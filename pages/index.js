@@ -3,10 +3,31 @@ import StockTicker from "../components/StockTicker";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { sendEmail } from "../components/functions";
+import Header from "../components/Header";
+import Value from "../components/Value";
+import Checkmarks from "../components/Checkmarks";
+import Typist from "react-typist";
 
 export default function IndexPage() {
   const [email, setEmail] = useState("");
   const router = useRouter(); // will be used once application page is finished
+  const [people, setPeople] = useState([
+    "Engineers",
+    "Designers",
+    "Growth Hackers",
+    "Creatives",
+    "Builders",
+  ]);
+
+  const onTypingDone = () => {
+    setPeople([
+      "Engineers",
+      "Designers",
+      "Growth Hackers",
+      "Creatives",
+      "Builders",
+    ]);
+  };
 
   return (
     <>
@@ -33,31 +54,32 @@ export default function IndexPage() {
           />
         </Head>
 
-        <div className="h-3/4 flex justify-center items-center bg-gray-100 p-12">
-          <div className="max-w-screen-xl">
-            <div className="md:flex md:flex-col md:items-center">
-              <div className="max-w-xl">
-                <img
-                  className="w-24 opacity-50 animate-spin-slow"
-                  src="/atom.svg"
-                />
-              </div>
-              <div className="flex-1 flex my-2 items-center">
-                <div className="">
-                  <h1 className="text-6xl tracking-tighter font-bold font-logo text-blue-600 leading-none">
-                    V1 Product Studio
-                  </h1>
-                  <h2 className="text-2xl tracking-tight italic text-gradient bg-gradient-to-r from-yellow-600 to-yellow-700">
-                    at Michigan
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <StockTicker text="It's time to build™"></StockTicker>
+        <Header />
 
-        <div className="flex items-center justify-center">
+        <StockTicker text="IT'S TIME TO BUILD™"></StockTicker>
+
+        <div className="p-8 max-w-6xl mx-auto">
+          <h1 className="text-6xl font-bold tracking-tighter text-gray-900 mt-8">
+            A one-of-a-kind product studio at the University of Michigan.
+          </h1>
+          <h2 className="text-3xl tracking-tight text-gray-700 my-4">
+            Software is eating the world, and we're here to embrace it. Join us
+            this summer for a sprint to create world-class products that solve
+            real problems.
+          </h2>
+        </div>
+        <div className="animate-bounce text-center font-bold mb-20 text-3xl text-gray-700">&darr;</div>
+        <Value />
+
+        <Checkmarks />
+
+        {/* CTA w/ Logos */}
+
+        {/* FAQ */}
+
+        {/* Who's running this? */}
+
+        {/* <div className="flex items-center justify-center">
           <div className="max-w-screen-xl text-center">
             <h1 className="text-6xl font-bold text-gray-800 tc">Want in?</h1>
             <div className="m-3 flex items-center border rounded-md border-teal-500 py-2">
@@ -86,16 +108,16 @@ export default function IndexPage() {
               Take a look
             </button>
           </div>
-        </div>
+        </div> */}
         <br />
         <br />
         <br />
 
-        {/* <div className="bg-gradient-to-r from-gray-900 to-black">
-        <p className="footer text-gray-200 text-center py-8">
-          &copy; 2021 V1 | team@v1michigan.com
-        </p>
-      </div> */}
+        <div className="bg-gradient-to-r from-gray-900 to-black">
+          <p className="footer text-gray-200 text-center py-8">
+            &copy; 2021 V1 | team@v1michigan.com
+          </p>
+        </div>
       </main>
     </>
   );

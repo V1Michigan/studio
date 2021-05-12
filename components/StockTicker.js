@@ -14,10 +14,10 @@ export default function StockTicker({ text }) {
   // have to try on build server to check
   // on hot reload, the margin returns
   return (
-    <div style={{ height: "50px" }}>
+    <div>
       <Marquee key="marquee" velocity={25}>
         {times(10, Number).map((id) => (
-          <Ticker key={id}>{text}</Ticker>
+          <Ticker className="m-1" key={id}>{text}</Ticker>
         ))}
       </Marquee>
     </div>
