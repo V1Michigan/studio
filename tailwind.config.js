@@ -4,19 +4,22 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
-  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+  purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        'accent-1': '#333',
-        'gray-custom': '#727272'
+        "accent-1": "#333",
+        "gray-custom": "#727272",
       },
       fontFamily: {
         logo: ["Source Sans Pro", "sans-serif"],
-        sans: ["Inter", "sans-serif", ...defaultTheme.fontFamily.sans]
-      }
+        sans: ["Inter", "sans-serif", ...defaultTheme.fontFamily.sans],
+      },
+      animation: {
+        "spin-slow": "spin 10s linear infinite",
+      },
     },
   },
   variants: {},
   plugins: [],
-}
+};
