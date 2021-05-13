@@ -66,74 +66,35 @@ export default function Application() {
         <meta property="og:image" content="/yc-event.jpg" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="bg-gradient-to-r from-gray-900 to-black p-4">
+
+      <div className="bg-gradient-to-t from-blue-100 to-blue-200 p-4">
         <div className="p-4 flex justify-center md:justify-start">
           <Link href="/">
             <img className="logo mr-3 rounded-sm" src="/apple-touch-icon.png" />
           </Link>
-          <div className="text-white text-xl flex items-center font-bold">
-            x
-          </div>
-          <img className="logo ml-3 rounded-sm" src="/yc.png" />
-          {referrer && (
-            <>
-              <div className="text-white text-xl flex items-center font-bold ml-3">
-                {partners.includes(referrer.toLowerCase()) ? (
-                  <>
-                    x{" "}
-                    <img
-                      className="logo ml-3 p-1 bg-gray-100 rounded-sm"
-                      src={`/partners/${referrer.toLowerCase()}.png`}
-                    />
-                  </>
-                ) : null}
-              </div>
-            </>
-          )}
         </div>
         <div>
-          <div className="block text-center mt-4">
-            <div
-              className="p-2 bg-gradient-to-r from-yellow-200 to-yellow-500 items-center text-gray-800 hover:opacity-75 leading-none rounded-full flex inline-flex mb-2 cursor-pointer"
-              role="alert"
-            >
-              <span className="flex rounded-full bg-yellow-500 uppercase px-2 py-1 text-xs font-bold mr-2 ml-2">
-                New
-              </span>
-              <span className="font-semibold mr-1 text-left flex-auto text-sm">
-                Y Combinator Event
-              </span>
-            </div>
-          </div>
-          <h1 className="text-4xl text-center tracking-tight text-gray-100 p-4 max-w-2xl mx-auto font-bold">
-            Fireside chat with YC President Geoff Ralston & Partner Reshma
-            Khilnani
+          <h1 className="text-4xl text-center tracking-tight text-black-900 p-4 max-w-2xl mx-auto font-bold">
+            V1 Product Studio Application 🚀
           </h1>
-          <p className="text-center font-bold text-gray-200 text-2xl">
-            Wednesday, February 17th at 7 PM ET
+          <p className="text-center font-bold text-black-800 text-2xl">
+            Ideate, Design, Build, Ship
           </p>
           <div className="max-w-lg mx-auto p-4 text-base">
             {" "}
-            <p className="text-gray-200">
-              V1 is hosting an event with Y Combinator, the seed startup
-              accelerator that funded Stripe, Airbnb, Cruise Automation,
-              DoorDash, Coinbase, Instacart, Dropbox, Twitch, Reddit, & more.
+            <p className="text-black-800">
+              Applications are due ___
             </p>
-            <p className="text-gray-200 mt-2">
-              Join us for a talk with Y Combinator President Geoff Ralston and
-              Partner Reshma Khilnani. Geoff & Reshma will cover some of the
-              myths that exist around starting startups, what you should do
-              while you’re still in school if you want to start a company, and
-              how YC can help you get started. Q&A to follow.
+            <p className="text-black-800 mt-2">
+              Build a real product by summer's end.
             </p>
-            <p className="text-gray-200 mt-2">
-              This event is open to all Michigan students. Register as soon as
-              possible.
+            <p className="text-black-800 mt-2">
+              Product Studio is meant for the most ambitious builders at Michigan. We look forward to reading your application.
             </p>
           </div>
         </div>
         <form
-          className="max-w-xl mx-auto p-4"
+          className="max-w-4xl mx-auto p-4"
           onSubmit={(e) => {
             e.preventDefault();
             setSubmitted(true);
@@ -170,7 +131,7 @@ export default function Application() {
           }}
         >
           <div>
-            <div className="w-full bg-gray-100 shadow-md rounded p-4">
+            <div className="w-full bg-white shadow-md rounded p-4">
               <div className="px-3 my-4">
                 <label
                   className="block text-gray-800 text-lg mb-2"
@@ -180,7 +141,7 @@ export default function Application() {
                   <input
                     name="name"
                     id="name"
-                    className="mt-2 appearance-none block w-full bg-gray-900 text-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800"
+                    className="mt-2 appearance-none block w-full bg-gray-000 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
                     type="text"
                     placeholder="Billy Magic"
                     onChange={handleInputChange}
@@ -199,7 +160,7 @@ export default function Application() {
                   <input
                     name="email"
                     id="email"
-                    className="mt-2 appearance-none block w-full bg-gray-900 text-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800"
+                    className="mt-2 appearance-none block w-full bg-gray-000 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
                     type="text"
                     placeholder="Email"
                     onChange={handleInputChange}
@@ -216,7 +177,7 @@ export default function Application() {
                   <input
                     name="referral"
                     id="referral"
-                    className="mt-2 appearance-none block w-full bg-gray-900 text-gray-200 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800"
+                    className="mt-2 appearance-none block w-full bg-gray-000 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
                     type="text"
                     placeholder="V1 Newsletter, etc."
                     onChange={handleInputChange}
@@ -269,29 +230,6 @@ export default function Application() {
             </div>
           </div>
         </form>
-
-        <div className="bg-white p-2 mt-8 max-w-2xl mx-auto shadow-md rounded-sm">
-          <h1 className="text-center text-xl font-bold my-2 text-gray-800">
-            Our Partners
-          </h1>
-          <div className="flex justify-center flex-wrap">
-            <img className="logo m-1 rounded-sm" src="/partners/mproduct.png" />
-            <img className="logo m-1 rounded-sm" src="/partners/akpsi.png" />
-            <img className="logo m-1 rounded-sm" src="/partners/shift.png" />
-            <img
-              className="logo m-1 rounded-sm p-2"
-              src="/partners/geecs.png"
-            />
-            <img
-              className="logo m-1 rounded-sm"
-              src="/partners/blockchain.png"
-            />
-            <img className="logo m-1 rounded-sm" src="/partners/sepi.png" />
-            <img className="logo m-1 rounded-sm" src="/partners/upround.png" />
-            <img className="logo m-1 rounded-sm" src="/partners/mpowered.png" />
-            <img className="logo m-1 rounded-sm" src="/partners/startum.png" />
-          </div>
-        </div>
       </div>
       <div className="bg-gradient-to-r from-gray-900 to-black">
         <p className="footer text-gray-200 text-center py-8">

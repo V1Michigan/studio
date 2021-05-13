@@ -10,7 +10,7 @@ const Value = () => (
           by building impactful software products.
         </p>
         <div className="flex mt-6 justify-center">
-          <div className="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+          <div className="w-16 h-1 rounded-full bg-blue-700 inline-flex"></div>
         </div>
       </div>
       <div className="flex flex-wrap">
