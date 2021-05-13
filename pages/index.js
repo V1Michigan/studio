@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { sendEmail } from "../components/functions";
 import Header from "../components/Header";
 import Value from "../components/Value";
+import Logos from "../components/Logos";
 import Checkmarks from "../components/Checkmarks";
 import Typist from "react-typist";
 
@@ -68,10 +69,14 @@ export default function IndexPage() {
             real problems.
           </h2>
         </div>
-        <div className="animate-bounce text-center font-bold mb-20 text-3xl text-gray-700">&darr;</div>
+        <div className="animate-bounce text-center font-bold mb-20 text-3xl text-gray-700">
+          &darr;
+        </div>
         <Value />
 
-        <Checkmarks />
+        {/* <Checkmarks /> */}
+
+        <Logos />
 
         {/* CTA w/ Logos */}
 
