@@ -1,8 +1,8 @@
-import Head from "next/head";
 import StockTicker from "../components/StockTicker";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { sendEmail } from "../components/functions";
+import HiddenHead from "../components/HiddenHead";
 import Header from "../components/Header";
 import Value from "../components/Value";
 import Checkmarks from "../components/Checkmarks";
@@ -32,30 +32,9 @@ export default function IndexPage() {
   return (
     <>
       <main>
-        <Head>
-          <title>V1 | University of Michigan</title>
-          <link rel="icon" href="/favicon.ico?v=1" />
-          <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-          <meta
-            name="description"
-            content="V1 is a monthly newsletter for ambitious engineering and design
-          students at the University of Michigan who are looking to build something great."
-          />
-          <meta name="og:title" content="V1 | University of Michigan" />
-          <meta
-            name="og:description"
-            content="V1 is a monthly newsletter for ambitious engineering and design
-          students at the University of Michigan who are looking to build something great."
-          />
-          <meta property="og:image" content="/share.png" />
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-        </Head>
+        <HiddenHead />
 
         <Header />
-
         <StockTicker text="IT'S TIME TO BUILD™"></StockTicker>
 
         <div className="p-8 max-w-6xl mx-auto">
@@ -68,7 +47,9 @@ export default function IndexPage() {
             real problems.
           </h2>
         </div>
-        <div className="animate-bounce text-center font-bold mb-20 text-3xl text-gray-700">&darr;</div>
+        <div className="animate-bounce text-center font-bold mb-20 text-3xl text-gray-700">
+          &darr;
+        </div>
         <Value />
 
         <Checkmarks />
@@ -79,10 +60,10 @@ export default function IndexPage() {
 
         {/* Who's running this? */}
 
-        {/* <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <div className="max-w-screen-xl text-center">
             <h1 className="text-6xl font-bold text-gray-800 tc">Want in?</h1>
-            <div className="m-3 flex items-center border rounded-md border-teal-500 py-2">
+            <div className="shadow-lg mt-8 m-3 p-3 flex items-center border rounded-md border-teal-500">
               <input
                 className="outline-none bg-transparent border-none mr-3 px-2 leading-tight focus:outline-none"
                 type="text"
@@ -94,12 +75,12 @@ export default function IndexPage() {
               />
             </div>
             <button
-              className="outline-none text-white p-2 pl-3 pr-3 rounded-md bg-gradient-to-r from-yellow-600 to-yellow-700"
+              className="flex mx-auto mt-8 text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
               onClick={() => {
                 console.log(email);
                 if (sendEmail(email)) {
                   // Uncomment the below line once application page has been finished
-                  // router.push("/application");
+                  router.push("/application");
                 } else {
                   alert("Please enter a valid email address");
                 }
@@ -108,7 +89,7 @@ export default function IndexPage() {
               Take a look
             </button>
           </div>
-        </div> */}
+        </div>
         <br />
         <br />
         <br />
