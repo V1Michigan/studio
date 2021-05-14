@@ -34,9 +34,9 @@ export default function IndexPage() {
     <>
       <main>
         <SEO />
+        <StockTicker text="IT'S TIME TO BUILD™"></StockTicker>
 
         <Header />
-        {/* <StockTicker text="IT'S TIME TO BUILD™"></StockTicker> */}
 
         <div className="p-8 max-w-6xl mx-auto text-center mt-6">
           <div className="max-w-xl flex justify-center align-items mx-auto">
