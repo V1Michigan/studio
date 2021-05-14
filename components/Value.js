@@ -8,10 +8,10 @@ const Value = () => (
             src="/atom.svg"
           />
         </div>
-        <h1 className="text-5xl font-bold title-font tracking-tight text-gray-900 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold title-font tracking-tight text-gray-900 mb-4">
           It's time to build.
         </h1>
-        <p className="text-2xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600 tracking-tight">
+        <p className="md:text-2xl text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600 tracking-tight">
           An initiative for Michigan students to cultivate the builder’s mindset
           by building impactful software products.
         </p>

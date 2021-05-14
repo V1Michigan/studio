@@ -46,10 +46,10 @@ export default function IndexPage() {
               <div className="text-gray-700 rounded-full border-8 animate-trippy3-slow border-black h-12 w-12"></div>
             </div>
           </div>
-          <h1 className="text-6xl font-bold tracking-tighter text-gray-900 mt-8">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-gray-900 mt-8">
             A one-of-a-kind product studio.
           </h1>
-          <h2 className="text-3xl tracking-tight text-gray-700 my-4">
+          <h2 className="text-2xl md:text-3xl tracking-tight text-gray-700 my-4">
             Join us this summer for a sprint to create world-class products that
             solve real problems.
           </h2>

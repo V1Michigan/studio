@@ -17,18 +17,18 @@ export default function FAQ({ titleUppercase, subtitleBold, listOfQA, color }) {
           </h1>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-xl mx-auto">
           {listOfQA.map(
             (item, index) => (
               (index = index + 1),
               (
                 <div
                   key={item.question}
-                  className={`p-1 relative hover:bg-gray-100 m-2`}
+                  className={`p-1 relative hover:bg-gray-100 my-4`}
                 >
                   <button
                     type="button"
-                    className={`block md:w-full text-left md:text-2xl sm:text-base font-bold tracking-tight text-gray-900 mb-2 focus:outline-none`}
+                    className={`block md:w-full text-left md:text-2xl text-xl font-bold tracking-tight text-gray-700 mb-2 focus:outline-none`}
                     onClick={() => {
                       dropdownOpen.find((element) => element == index)
                         ? setdropdownOpen(

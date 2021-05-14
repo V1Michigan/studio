@@ -10,9 +10,6 @@ module.exports = {
         "accent-1": "#333",
         "gray-custom": "#727272",
       },
-      fontFamily: {
-        sans: ["Inter", "sans-serif", ...defaultTheme.fontFamily.sans],
-      },
       animation: {
         "spin-slow": "spin 10s linear infinite",
         "trippy-slow": "trippy 15s linear infinite",
