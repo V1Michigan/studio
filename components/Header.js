@@ -14,7 +14,7 @@ const TrippyDiv2 = styled.div`
 `;
 
 const Header = () => (
-  <div className="h-3/4 flex justify-center items-center bg-gray-800 p-12">
+  <div className="flex justify-center items-center background px-12 py-24 shadow-md">
     <div className="max-w-screen-2xl">
       <div className="flex items-center justify-center text-center ">
         
@@ -35,7 +35,7 @@ const Header = () => (
         </a>
 
         <p className="text-gray-100 text-sm italic mt-6 pb-2">
-          Limited spots available, applications due 5/19 at 11:59 PM ET
+          Limited spots available, applications due 5/19 at 11:59 PM ET. <br/> Mass Meeting is 5/16 at 6 PM ET. <br/> Sign up to stay updated.
         </p>
       </div>
     </div>
