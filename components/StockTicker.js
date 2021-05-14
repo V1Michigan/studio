@@ -8,7 +8,7 @@ export default function StockTicker({ text }) {
   // on hot reload, the margin returns
   return (
     <div className="bg-gray-700 text-white">
-      <Marquee key="marquee" velocity={25}>
+      <Marquee key="marquee" velocity={15}>
         {times(10, Number).map((id) => (
           <div className="m-2" key={id}>
             {text}
