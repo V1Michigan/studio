@@ -176,6 +176,15 @@ export default function Application() {
               builder. We look forward to reading your application. The program
               runs from May 23rd, 2021 to the end of August.
             </p>
+            <br/>
+            <Link href="/">
+              <div
+                style={{ maxWidth: "160px" }}
+                className="font-semibold text-lg bg-blue-600 hover:opacity-75 text-white py-2 px-2 rounded shadow mb-4 block mx-auto"
+              >
+                More Info
+              </div>
+            </Link>
           </div>
         </div>
         <form
@@ -197,7 +206,11 @@ export default function Application() {
               )
               .then((res) => {
                 if (res.data.result === "success") {
-                  if (first_name != "" && first_name != undefined && first_name != null) {
+                  if (
+                    first_name != "" &&
+                    first_name != undefined &&
+                    first_name != null
+                  ) {
                     sendAWSEmail(event.email, true, first_name);
                   } else {
                     sendAWSEmail(event.email, true, false);

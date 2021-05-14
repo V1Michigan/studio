@@ -17,7 +17,7 @@ export default function SEO({ title, description, image }) {
         content={
           description
             ? description
-            : "V1 is a monthly newsletter for ambitious engineering and design students at the University of Michigan who are looking to build something great."
+            : "V1 Product Studio is where you build world-class products for real users. Ship by the end of summer."
         }
       />
       <meta
@@ -25,7 +25,7 @@ export default function SEO({ title, description, image }) {
         content={
           description
             ? description
-            : "V1 is a monthly newsletter for ambitious engineering and design students at the University of Michigan who are looking to build something great."
+            : "V1 Product Studio is where you build world-class products for real users. Ship by the end of summer."
         }
       />
 
