@@ -60,7 +60,7 @@ const TextArea = ({
     <label className="block text-gray-900 text-lg mb-2" htmlFor="name">
       {label} {required ? <span className="text-red-800">*</span> : null}
       <br />
-      <div className="text-grey-600 text-sm mb-2">
+      <div className="text-gray-600 text-sm mb-2">
         {subtext ? subtext : null}
       </div>
       {required ? (
@@ -158,21 +158,21 @@ export default function Application() {
           </Link>
         </div>
         <div>
-          <h1 className="text-4xl text-center tracking-tight text-black-900 p-4 max-w-2xl mx-auto font-bold">
+          <h1 className="text-4xl text-center tracking-tight text-gray-900 p-4 max-w-2xl mx-auto font-bold">
             V1 Product Studio Application 🚀
           </h1>
-          <p className="text-center font-bold text-black-800 text-2xl">
-            You've got the will, so let's build
+          <p className="text-center font-bold text-gray-800 text-2xl">
+            It's time to build.
           </p>
-          <div className="max-w-lg mx-auto p-4 text-base">
+          <div className="max-w-lg mx-auto p-4 text-base text-center">
             {" "}
-            <p className="text-black-800">
+            <p className="text-gray-800">
               Applications are due April 19th, 2021 at 11:59 PM ET
             </p>
-            <p className="text-black-800 mt-2">
+            <p className="text-gray-800 mt-2">
               Build and launch a real product by summer's end.
             </p>
-            <p className="text-black-800 mt-2">
+            <p className="text-gray-800 mt-2">
               V1 Product Studio is open to any ambitious Michigan student
               builder. We look forward to reading your application. The program
               runs from May 23rd, 2021 to the end of August.
@@ -295,12 +295,12 @@ export default function Application() {
               <div className="px-3 mt-10 mb-6">
                 <button
                   type="submit"
-                  className={`bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-75 text-white py-3 px-4 rounded shadow mb-4 ${
+                  className={`bg-gradient-to-r font-bold text-xl from-blue-500 to-blue-600 hover:opacity-75 text-white py-3 px-4 rounded shadow mb-4 ${
                     submitted ? "hidden" : "block"
                   } mx-auto`}
                   disabled={submitted}
                 >
-                  Let's go 🚀
+                  Submit Application 🚀
                 </button>
                 <button
                   type="button"

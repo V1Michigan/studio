@@ -19,16 +19,16 @@ export default function Submitted() {
           </Link>
         </div>
         <div>
-          <h1 className="text-4xl text-center tracking-tight text-black-900 p-4 max-w-2xl mx-auto font-bold">
+          <h1 className="text-5xl text-center tracking-tight text-gray-900 p-4 max-w-2xl mx-auto font-bold">
             Application Submitted
           </h1>
-          <p className="text-center font-bold text-black-800 text-2xl">
-            You've got the will, so let's build
+          <p className="text-center font-bold text-gray-800 text-3xl">
+            It's time to build.
           </p>
-          <div className="max-w-lg mx-auto p-4 text-base">
+          <div className="max-w-lg mx-auto p-4 text-2xl font-bold">
             {" "}
-            <p className="text-center text-black-800">
-              You'll hear from us this week. Look out for an email.
+            <p className="text-center text-gray-800">
+             Look out for an email from us this week! :) 
             </p>
           </div>
         </div>
