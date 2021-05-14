@@ -92,7 +92,7 @@ export default function IndexPage() {
                 onClick={() => {
                   console.log(email);
                   if (sendEmail(email)) {
-                    router.push("/application");
+                    router.push("/apply");
                   } else {
                     alert("Please enter a valid email address");
                   }
