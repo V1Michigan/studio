@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import axios from "axios";
 import SEO from "../components/SEO";
+import { sendAWSEmail } from "../components/functions";
 
 const Input = ({
   label,
@@ -177,13 +178,12 @@ export default function Application() {
 
             axios
               .post(
-                "https://script.google.com/macros/s/AKfycbxlhVld1NPhOCvEPqctFEoRqSV7QCSXngL72BcJeb5CUUbEbrdm3xAu/exec",
+                "https://script.google.com/macros/s/AKfycbyK4VdcyYB6nY63xr4utgBC2aWd3Lf3r4a4wDNGkUj5eQ4IGBlE4q1XeSuS2TDfCCR8/exec",
                 data
               )
               .then((res) => {
                 if (res.data.result === "success") {
-                  window.location.href =
-                    "https://ycombinator.zoom.us/meeting/register/tJMvfu2vqz0sE9V4tnmbHYztXxeGNhP438lG?timezone_id=America%2FNew_York";
+                  sendAWSEmail(event.email, true);
                 } else {
                   Swal.fire(
                     "There was an error submitting the form.",

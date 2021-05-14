@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import axios from "axios";
+import SEO from '../components/SEO'
 
 export default function YC() {
   const [event, setEvent] = useState({

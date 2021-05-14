@@ -1,7 +1,7 @@
 function checkEmail(email) {
   // function to check whether an email is legit
   // TODO: eventually use api to check
-  
+
   const spamWords = ["test", "spam", "a"];
   const specialChars = ["!", "*", "&", "^", "$", "#"];
 
@@ -33,23 +33,34 @@ function checkEmail(email) {
   return true;
 }
 
+export function pushEmailToSheets(email) {
+  var formData = new FormData();
+  formData.append("email", email.toLowerCase().trim());
+
+  // TODO: hide api request urls in _redirects (netlify)
+  fetch(
+    "https://script.google.com/macros/s/AKfycbyuqpqfYPmsGCw0sIOD2hIJr0lL8b9XJzDTtj6wvqAd-jKuMY_69-JINwswCtbSpaJ-/exec",
+    { method: "POST", body: formData }
+  );
+}
+
+export function sendAWSEmail(email, submit) {
+  var obj = { email: email.toLowerCase().trim() };
+  if (submit) {
+    obj["type"] = "submitted";
+  }
+  let objEmail = JSON.stringify(obj);
+
+  fetch(
+    `https://2jdqle79a7.execute-api.us-east-1.amazonaws.com/default/ProductStudioSignupEmail`,
+    { method: "POST", body: objEmail }
+  );
+}
+
 export function sendEmail(email) {
-  console.log(email);
   if (checkEmail(email)) {
-    var formData = new FormData();
-    formData.append("email", email.toLowerCase().trim());
-
-    // TODO: hide api request urls in _redirects (netlify)
-    fetch(
-      "https://script.google.com/macros/s/AKfycbyuqpqfYPmsGCw0sIOD2hIJr0lL8b9XJzDTtj6wvqAd-jKuMY_69-JINwswCtbSpaJ-/exec",
-      { method: "POST", body: formData }
-    );
-
-    let objEmail = JSON.stringify({ email: email.toLowerCase().trim() });
-    fetch(
-      `https://2jdqle79a7.execute-api.us-east-1.amazonaws.com/default/ProductStudioSignupEmail`,
-      { method: "POST", body: objEmail }
-    );
+    pushEmailToSheets(email);
+    sendAWSEmail(email, false);
     return true;
   } else {
     return false;
