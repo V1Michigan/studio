@@ -96,7 +96,6 @@ export default function Application() {
     name: "",
     email: "",
     referral: "",
-    new: "",
     project: "",
     links: "",
     year: "",
@@ -189,6 +188,8 @@ export default function Application() {
               data.append(key, value);
             }
 
+            var first_name = event.name.trim().split(" ")[0];
+
             axios
               .post(
                 "https://script.google.com/macros/s/AKfycbyK4VdcyYB6nY63xr4utgBC2aWd3Lf3r4a4wDNGkUj5eQ4IGBlE4q1XeSuS2TDfCCR8/exec",
@@ -196,7 +197,11 @@ export default function Application() {
               )
               .then((res) => {
                 if (res.data.result === "success") {
-                  sendAWSEmail(event.email, true);
+                  if (first_name != "" && first_name != undefined && first_name != null) {
+                    sendAWSEmail(event.email, true, first_name);
+                  } else {
+                    sendAWSEmail(event.email, true, false);
+                  }
                   router.push("/submitted");
                 } else {
                   Swal.fire(
@@ -212,7 +217,6 @@ export default function Application() {
                   name: "",
                   email: "",
                   referral: "",
-                  new: "",
                   project: "",
                   links: "",
                   year: "",
