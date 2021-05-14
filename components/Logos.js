@@ -13,7 +13,6 @@ const Logos = () => {
     "https://contrarycap.com/images/horizontal-color@3x.svg",
     "https://media-exp1.licdn.com/dms/image/C4D0BAQG0zLRkBUUDJw/company-logo_200_200/0/1600537109115?e=1628726400&v=beta&t=abDN46R9st8WH-O6v1zHO5QHuDpM7xImMQ0czWL-DoM",
     "https://www.finsmes.com/wp-content/uploads/2019/02/kleiner-perkins-black.png",
-    "https://europeansting.files.wordpress.com/2016/02/stripe-logo.png"
   ];
   return (
     <section className="max-w-4xl text-center mx-auto my-48">

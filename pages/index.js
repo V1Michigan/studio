@@ -55,49 +55,50 @@ export default function IndexPage() {
 
         <Logos />
 
-        <section className="max-w-6xl mx-auto my-48">
-          <div className="m-8">
-            <h1 className="text-gray-900 text-4xl text-center font-bold tracking-tighter my-4">
-              Interested? Applications now open.
-            </h1>
-            <p className="text-gray-700 text-xl text-center my-2 max-w-3xl mx-auto">
-              Build and launch a real product over three months this summer. We
-              can't wait to see what you build.
-            </p>
-          </div>
+        <div id="apply" className="bg-gray-100 py-4">
+          <section className="max-w-6xl mx-auto my-24 ">
+            <div className="m-8">
+              <h1 className="text-gray-900 text-4xl text-center font-bold tracking-tighter my-4">
+                Interested? Applications now open.
+              </h1>
+              <p className="text-gray-700 text-xl text-center my-2 max-w-3xl mx-auto">
+                Build and launch a real product over three months this summer.
+                We can't wait to see what you build.
+              </p>
+            </div>
 
-          <div className="max-w-md mx-auto m-3 py-2">
-            <label className="mb-4 font-bold tracking-tight text-xl">
-              Email
-            </label>
-            <input
-              className="mt-2 w-full text-xl outline-none bg-transparent border py-3 rounded-md shadow-sm mr-3 px-3 leading-tight focus:outline-none"
-              type="text"
-              placeholder="billymagic@umich.edu"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
-          </div>
-          <div className="text-center">
-            <button
-              className="text-xl outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
-              onClick={() => {
-                console.log(email);
-                if (sendEmail(email)) {
-                  // Uncomment the below line once application page has been finished
-                  router.push("/application");
-                } else {
-                  alert("Please enter a valid email address");
-                }
-              }}
-            >
-              Let's do this ›
-            </button>
-          </div>
-        </section>
-
+            <div className="max-w-md mx-auto m-3">
+              <label className="mb-4 font-bold tracking-tight text-xl">
+                Email
+              </label>
+              <input
+                className="mt-2 w-full text-xl outline-none bg-transparent border py-3 rounded-md shadow-sm mr-3 px-3 leading-tight focus:outline-none"
+                type="text"
+                placeholder="billymagic@umich.edu"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+            </div>
+            <div className="text-center">
+              <button
+                className="text-xl outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
+                onClick={() => {
+                  console.log(email);
+                  if (sendEmail(email)) {
+                    // Uncomment the below line once application page has been finished
+                    router.push("/application");
+                  } else {
+                    alert("Please enter a valid email address");
+                  }
+                }}
+              >
+                Let's do this ›
+              </button>
+            </div>
+          </section>
+        </div>
         <FAQ
           titleUppercase="Questions? We got you"
           color="blue"
@@ -128,7 +129,7 @@ export default function IndexPage() {
             {
               question: "What is the time commitment?",
               answer:
-                "You can expect to commit an average of 5-10 hours a week. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
+                "You can expect to commit an average of 5-10 hours a week. The program runs from May 23rd, 2020 to the end of August. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
             },
             {
               question: "What does this program consist of?",
