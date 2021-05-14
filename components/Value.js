@@ -2,12 +2,10 @@ const Value = () => (
   <section className="text-gray-700 body-font bg-gray-100 py-16">
     <div className="container px-5 py-2 mx-auto">
       <div className="text-center mb-8">
-        <div className="flex justify-center mb-4 h-24">
-          <img
-            className="opacity-75 animate-spin-slow text-black-900"
-            src="/atom.svg"
-          />
-        </div>
+      <div className="max-w-md p-4 mx-auto">
+        <img className="tilt2 shadow-md rounded-sm border-4" src="/products.gif"></img>
+      </div>
+      <br/>
         <h1 className="text-4xl md:text-5xl font-bold title-font tracking-tight text-gray-900 mb-4">
           It's time to build.
         </h1>
