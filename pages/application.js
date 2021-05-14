@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import Swal from "sweetalert2";
 import axios from "axios";
 import SEO from "../components/SEO";
@@ -48,6 +49,7 @@ const Input = ({
 
 const TextArea = ({
   label,
+  subtext,
   id,
   submitted,
   required,
@@ -55,8 +57,12 @@ const TextArea = ({
   handleInputChange,
 }) => (
   <div className="px-3 my-4">
-    <label className="block text-gray-800 text-lg mb-2" htmlFor="name">
+    <label className="block text-gray-900 text-lg mb-2" htmlFor="name">
       {label} {required ? <span className="text-red-800">*</span> : null}
+      <br />
+      <div className="text-grey-600 text-sm mb-2">
+        {subtext ? subtext : null}
+      </div>
       {required ? (
         <textarea
           name={id}
@@ -94,10 +100,11 @@ export default function Application() {
     project: "",
     links: "",
     year: "",
-    else: "",
+    commitment: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [referrer, setReferrer] = useState(null);
+  const router = useRouter();
 
   const partners = [
     "mproduct",
@@ -144,7 +151,10 @@ export default function Application() {
       <div className="bg-gradient-to-t from-blue-100 to-blue-200 p-4">
         <div className="p-4 flex justify-center md:justify-start">
           <Link href="/">
-            <img className="logo mr-3 ml-4 rounded-sm" src="/clear_logo.png" />
+            <img
+              className="logo mr-3 ml-4 rounded-sm cursor-pointer"
+              src="/clear_logo.png"
+            />
           </Link>
         </div>
         <div>
@@ -152,17 +162,20 @@ export default function Application() {
             V1 Product Studio Application 🚀
           </h1>
           <p className="text-center font-bold text-black-800 text-2xl">
-            Ideate, Design, Build, Ship
+            You've got the will, so let's build
           </p>
           <div className="max-w-lg mx-auto p-4 text-base">
             {" "}
-            <p className="text-black-800">Applications are due ___</p>
-            <p className="text-black-800 mt-2">
-              Build a real product by summer's end.
+            <p className="text-black-800">
+              Applications are due April 18th, 2021 at 11:59 PM ET
             </p>
             <p className="text-black-800 mt-2">
-              Product Studio is meant for the most ambitious builders at
-              Michigan. We look forward to reading your application.
+              Build and launch a real product by summer's end.
+            </p>
+            <p className="text-black-800 mt-2">
+              V1 Product Studio is open to any ambitious Michigan student
+              builder. We look forward to reading your application. The program
+              runs from May 23rd, 2021 to the end of August.
             </p>
           </div>
         </div>
@@ -184,6 +197,7 @@ export default function Application() {
               .then((res) => {
                 if (res.data.result === "success") {
                   sendAWSEmail(event.email, true);
+                  router.push("/submitted");
                 } else {
                   Swal.fire(
                     "There was an error submitting the form.",
@@ -202,7 +216,7 @@ export default function Application() {
                   project: "",
                   links: "",
                   year: "",
-                  else: "",
+                  commitment: "",
                 });
               });
           }}
@@ -231,9 +245,39 @@ export default function Application() {
               <Input
                 label="Grad Year"
                 id="year"
-                placeholder="2022, 2025, ..."
+                placeholder="2022, 2023, 2024, 2025, ..."
                 handleInputChange={handleInputChange}
                 value={event.year}
+                submitted={submitted}
+                required={true}
+              />
+
+              <TextArea
+                label="Tell us about a project you've worked on! Why did you do it?"
+                id="project"
+                subtext="Note: project is an extremely general term — nearly anything goes, and it does not need to be technical"
+                handleInputChange={handleInputChange}
+                value={event.project}
+                required={true}
+                submitted={submitted}
+              />
+
+              <TextArea
+                label="Drop a few links of things you're proud of"
+                subtext="(Portfolio, GitHub, Dribbble, LinkedIn, Twitter, Figmas etc.)"
+                id="links"
+                handleInputChange={handleInputChange}
+                value={event.links}
+                required={true}
+                submitted={submitted}
+              />
+
+              <Input
+                label="Are you committed for 5-10 hours a week from May 23rd, 2021 to Mid-August — Yes or No"
+                id="commitment"
+                placeholder="Yes"
+                handleInputChange={handleInputChange}
+                value={event.commitment}
                 submitted={submitted}
                 required={true}
               />
@@ -247,49 +291,16 @@ export default function Application() {
                 submitted={submitted}
               />
 
-              <TextArea
-                label="Tell us about a project you've worked on! Why did you do it? Note: project is an extremely general term — nearly anything goes, and it does not need to be technical"
-                id="project"
-                handleInputChange={handleInputChange}
-                value={event.project}
-                required={true}
-                submitted={submitted}
-              />
-
-              <TextArea
-                label="Teach us something new! We just want to see your passion shine through."
-                id="new"
-                handleInputChange={handleInputChange}
-                value={event.new}
-                required={true}
-                submitted={submitted}
-              />
-              <TextArea
-                label="Drop some links of things you're proud of!"
-                id="links"
-                handleInputChange={handleInputChange}
-                value={event.links}
-                submitted={submitted}
-              />
-
-              <TextArea
-                label="Do you want to tell us anything more?"
-                id="else"
-                handleInputChange={handleInputChange}
-                value={event.else}
-                submitted={submitted}
-              />
-
               {/* SUBMIT BUTTON */}
               <div className="px-3 mt-10 mb-6">
                 <button
                   type="submit"
-                  className={`bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-75 text-white font-bold py-3 px-4 rounded shadow mb-4 ${
+                  className={`bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-75 text-white py-3 px-4 rounded shadow mb-4 ${
                     submitted ? "hidden" : "block"
                   } mx-auto`}
                   disabled={submitted}
                 >
-                  It's time to build ›
+                  Let's go 🚀
                 </button>
                 <button
                   type="button"

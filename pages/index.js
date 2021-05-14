@@ -11,7 +11,7 @@ import Typist from "react-typist";
 
 export default function IndexPage() {
   const [email, setEmail] = useState("");
-  const router = useRouter(); // will be used once application page is finished
+  const router = useRouter();
   const [people, setPeople] = useState([
     "Engineers",
     "Designers",
@@ -40,7 +40,7 @@ export default function IndexPage() {
 
         <div className="p-8 max-w-6xl mx-auto">
           <h1 className="text-6xl font-bold tracking-tighter text-gray-900 mt-8">
-            A one-of-a-kind product studio at the University of Michigan.
+            A one-of-a-kind product studio.
           </h1>
           <h2 className="text-3xl tracking-tight text-gray-700 my-4">
             Software is eating the world, and we're here to embrace it. Join us
@@ -52,52 +52,51 @@ export default function IndexPage() {
           &darr;
         </div>
         <Value />
-
         <Logos />
 
-        <section className="max-w-6xl mx-auto my-48">
-          <div className="m-8">
-            <h1 className="text-gray-900 text-4xl text-center font-bold tracking-tighter my-4">
-              Interested? Applications now open.
-            </h1>
-            <p className="text-gray-700 text-xl text-center my-2 max-w-3xl mx-auto">
-              Build and launch a real product over three months this summer. We
-              can't wait to see what you build.
-            </p>
-          </div>
+        <div id="apply" className="bg-gray-100 py-4">
+          <section className="max-w-6xl mx-auto my-24 ">
+            <div className="m-8">
+              <h1 className="text-gray-900 text-4xl text-center font-bold tracking-tighter my-4">
+                Interested? Applications now open.
+              </h1>
+              <p className="text-gray-700 text-xl text-center my-2 max-w-3xl mx-auto">
+                Build and launch a real product over three months this summer.
+                We can't wait to see what you build. Limited spots available.
+              </p>
+            </div>
 
-          <div className="max-w-md mx-auto m-3 py-2">
-            <label className="mb-4 font-bold tracking-tight text-xl">
-              Email
-            </label>
-            <input
-              className="mt-2 w-full text-xl outline-none bg-transparent border py-3 rounded-md shadow-sm mr-3 px-3 leading-tight focus:outline-none"
-              type="text"
-              placeholder="billymagic@umich.edu"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
-          </div>
-          <div className="text-center">
-            <button
-              className="text-xl outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
-              onClick={() => {
-                console.log(email);
-                if (sendEmail(email)) {
-                  // Uncomment the below line once application page has been finished
-                  router.push("/application");
-                } else {
-                  alert("Please enter a valid email address");
-                }
-              }}
-            >
-              Let's do this ›
-            </button>
-          </div>
-        </section>
-
+            <div className="max-w-md mx-auto m-3">
+              <label className="mb-4 font-bold tracking-tight text-xl">
+                Email
+              </label>
+              <input
+                className="mt-2 w-full text-xl outline-none bg-transparent border py-3 rounded-md shadow-sm mr-3 px-3 leading-tight focus:outline-none"
+                type="text"
+                placeholder="billymagic@umich.edu"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+            </div>
+            <div className="text-center">
+              <button
+                className="text-xl outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
+                onClick={() => {
+                  console.log(email);
+                  if (sendEmail(email)) {
+                    router.push("/application");
+                  } else {
+                    alert("Please enter a valid email address");
+                  }
+                }}
+              >
+                Let's do this ›
+              </button>
+            </div>
+          </section>
+        </div>
         <FAQ
           titleUppercase="Questions? We got you"
           color="blue"
@@ -111,7 +110,9 @@ export default function IndexPage() {
             {
               question: "What is V1?",
               answer:
-                "Nope! This course is designed for beginners and anyone who wants to learn how to prototype their ideas in Figma.",
+                "V1 is the community for ambitious student builders at the University of Michigan. Check out more on the website ",
+              link: "https://v1michigan.com",
+              textAfterLink: "here.",
             },
             {
               question: "What experience do I need?",
@@ -121,16 +122,17 @@ export default function IndexPage() {
             {
               question: "Do I need an idea?",
               answer:
-                "Not necessarily! We'll provide some sample ideas you can work on and help you brainstorm! :) ",
+                "No! We’ll be working with each team to narrow down a specific problem area they’d like to work on and then help them write a spec!                 ",
             },
             {
               question: "What is the time commitment?",
               answer:
-                "You can expect to commit an average of 10 hours a week. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
+                "You can expect to commit an average of 5-10 hours a week. The program runs from May 23rd, 2020 to the end of August. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
             },
             {
-              question: "What are som example products?",
-              answer: "",
+              question: "What does this program consist of?",
+              answer:
+                "We’ll ideate on ideas with you, write up a spec, and spend the rest of the time building out an MVP and helping you launch it on various channels including but not limited to Product Hunt, Reddit, and more and hopefully, in the end you’ll have real users! ",
             },
             {
               question: "What will I learn?",
@@ -138,13 +140,21 @@ export default function IndexPage() {
                 "You will learn how to make wireframes and turn them into prototypes in Figma. After completion, you'll have gained the skills, community, and confidence to bring any idea to life!",
             },
             {
-              question: "When are applications due?",
-              answer: "...",
+              question:
+                "Will we stop working on the projects after the summer?               ",
+              answer:
+                "It’s up to you and the rest of your team! You are welcome to continue working on the projects - in fact, we encourage it! You can also choose to mentor the next cohort :)",
+            },
+            {
+              question: "How large is the initial cohort? ",
+              answer:
+                "We expect the initial cohort to be 4-5 teams and each team to be ~2-3 people.               ",
             },
 
             {
               question: "Is this free?",
-              answer: "Yes.",
+              answer:
+                "Yes. This program is run by 5 Michigan students who are a part of the senior leadership team at V1.",
             },
             {
               question: "Got another question?",

@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 export default function SEO({ title, description, image }) {
   return (
     <Head>
-      <title>{title ? title : "V1 | University of Michigan"}</title>
+      <title>{title ? title : "V1 Product Studio | University of Michigan"}</title>
       <meta
         name="og:title"
-        content={title ? title : "V1 | University of Michigan"}
+        content={title ? title : "V1 Product Studio | University of Michigan"}
       />
 
       <link rel="icon" href="/favicon.ico?v=1" />
