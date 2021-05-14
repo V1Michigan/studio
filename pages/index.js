@@ -111,7 +111,9 @@ export default function IndexPage() {
             {
               question: "What is V1?",
               answer:
-                "Nope! This course is designed for beginners and anyone who wants to learn how to prototype their ideas in Figma.",
+                "V1 is the community for ambitious student builders at the University of Michigan. Check out more on the website ",
+              link: "https://v1michigan.com",
+              textAfterLink: "here.",
             },
             {
               question: "What experience do I need?",
@@ -121,16 +123,17 @@ export default function IndexPage() {
             {
               question: "Do I need an idea?",
               answer:
-                "Not necessarily! We'll provide some sample ideas you can work on and help you brainstorm! :) ",
+                "No! We’ll be working with each team to narrow down a specific problem area they’d like to work on and then help them write a spec!                 ",
             },
             {
               question: "What is the time commitment?",
               answer:
-                "You can expect to commit an average of 10 hours a week. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
+                "You can expect to commit an average of 5-10 hours a week. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
             },
             {
-              question: "What are som example products?",
-              answer: "",
+              question: "What does this program consist of?",
+              answer:
+                "We’ll ideate on ideas with you, write up a spec, and spend the rest of the time building out an MVP and helping you launch it on various channels including but not limited to Product Hunt, Reddit, and more and hopefully, in the end you’ll have real users! ",
             },
             {
               question: "What will I learn?",
@@ -138,13 +141,21 @@ export default function IndexPage() {
                 "You will learn how to make wireframes and turn them into prototypes in Figma. After completion, you'll have gained the skills, community, and confidence to bring any idea to life!",
             },
             {
-              question: "When are applications due?",
-              answer: "...",
+              question:
+                "Will we stop working on the projects after the summer?               ",
+              answer:
+                "It’s up to you and the rest of your team! You are welcome to continue working on the projects - in fact, we encourage it! You can also choose to mentor the next cohort :)",
+            },
+            {
+              question: "How large is the initial cohort? ",
+              answer:
+                "We expect the initial cohort to be 4-5 teams and each team to be ~2-3 people.               ",
             },
 
             {
               question: "Is this free?",
-              answer: "Yes.",
+              answer:
+                "Yes. This program is run by 5 Michigan students who are a part of the senior leadership team at V1.",
             },
             {
               question: "Got another question?",
