@@ -23,14 +23,14 @@ const Header = () => (
             <h1 className="md:text-6xl text-5xl tracking-tight font-bold text-gray-100 leading-none">
               V1 Product Studio
             </h1>
-            <h2 className="md:text-2xl text-xl mt-1 tracking-tight text-gradient bg-gradient-to-r from-yellow-200 to-yellow-300">
+            <h2 className="md:text-2xl text-xl mt-1 tracking-tight text-yellow-200">
             University of Michigan
             </h2>
           </div>
         </div>
       </div>
       <div className="mt-6 text-center">
-        <a href="#apply" className="text-base md:text-xl font-bold outline-none text-white py-3 px-6 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75">
+        <a href="#apply" className="text-base md:text-xl font-bold outline-none text-white py-3 px-6 rounded-md bg-blue-700 hover:opacity-75">
           Apply now ›
         </a>
 

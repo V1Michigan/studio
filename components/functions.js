@@ -44,10 +44,13 @@ export function pushEmailToSheets(email) {
   );
 }
 
-export function sendAWSEmail(email, submit) {
+export function sendAWSEmail(email, submit, first_name) {
   var obj = { email: email.toLowerCase().trim() };
   if (submit) {
     obj["type"] = "submitted";
+  }
+  if (first_name) {
+    obj['first_name'] = first_name;
   }
   let objEmail = JSON.stringify(obj);
 
@@ -60,7 +63,7 @@ export function sendAWSEmail(email, submit) {
 export function sendEmail(email) {
   if (checkEmail(email)) {
     pushEmailToSheets(email);
-    sendAWSEmail(email, false);
+    sendAWSEmail(email, false, false);
     return true;
   } else {
     return false;

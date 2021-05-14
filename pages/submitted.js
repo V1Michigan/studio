@@ -25,10 +25,10 @@ export default function Submitted() {
           <p className="text-center font-bold text-gray-800 text-3xl">
             It's time to build.
           </p>
-          <div className="max-w-lg mx-auto p-4 text-2xl font-bold">
+          <div className="max-w-lg mx-auto p-4 text-2xl">
             {" "}
             <p className="text-center text-gray-800">
-             Look out for an email from us this week! :) 
+             A confirmation email should be in your inbox in a few minutes! :) 
             </p>
           </div>
         </div>
