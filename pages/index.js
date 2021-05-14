@@ -90,7 +90,7 @@ export default function IndexPage() {
             </div>
             <div className="text-center">
               <button
-                className="text-xl m-2 font-bold outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
+                className="text-base md:text-xl m-2 font-bold outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
                 onClick={() => {
                   console.log(email);
                   if (sendEmail(email)) {
