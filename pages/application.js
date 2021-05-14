@@ -167,7 +167,7 @@ export default function Application() {
           <div className="max-w-lg mx-auto p-4 text-base">
             {" "}
             <p className="text-black-800">
-              Applications are due April 18th, 2021 at 11:59 PM ET
+              Applications are due April 19th, 2021 at 11:59 PM ET
             </p>
             <p className="text-black-800 mt-2">
               Build and launch a real product by summer's end.

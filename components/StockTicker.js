@@ -7,7 +7,7 @@ export default function StockTicker({ text }) {
   // have to try on build server to check
   // on hot reload, the margin returns
   return (
-    <div>
+    <div className="bg-gray-700 text-white">
       <Marquee key="marquee" velocity={25}>
         {times(10, Number).map((id) => (
           <div className="m-2" key={id}>
