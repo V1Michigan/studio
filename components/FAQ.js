@@ -4,7 +4,7 @@ export default function FAQ({ titleUppercase, subtitleBold, listOfQA, color }) {
   const [dropdownOpen, setdropdownOpen] = useState([]);
 
   return (
-    <div className="bg-white">
+    <div className="bg-white mt-10">
       <section className="mx-auto max-w-screen-xl p-12">
         <div className="flex flex-col text-center w-full mb-8">
           <h2

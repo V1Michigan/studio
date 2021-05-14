@@ -38,40 +38,47 @@ export default function IndexPage() {
         <Header />
         <StockTicker text="IT'S TIME TO BUILD™"></StockTicker>
 
-        <div className="p-8 max-w-6xl mx-auto">
+        <div className="p-8 max-w-6xl mx-auto text-center mt-6">
+          <div className="max-w-xl flex justify-center mx-auto">
+            <div>
+              <div className="text-gray-700 rounded-full border-8 animate-trippy-slow border-black h-16 w-16"></div>
+              <div className="text-gray-700 rounded-full border-8 animate-trippy2-slow border-black h-14 w-14"></div>
+              <div className="text-gray-700 rounded-full border-8 animate-trippy3-slow border-black h-12 w-12"></div>
+            </div>
+          </div>
           <h1 className="text-6xl font-bold tracking-tighter text-gray-900 mt-8">
             A one-of-a-kind product studio.
           </h1>
           <h2 className="text-3xl tracking-tight text-gray-700 my-4">
-            Software is eating the world, and we're here to embrace it. Join us
-            this summer for a sprint to create world-class products that solve
-            real problems.
+            Join us this summer for a sprint to create world-class products that
+            solve real problems.
           </h2>
         </div>
         <div className="animate-bounce text-center font-bold mb-20 text-3xl text-gray-700">
           &darr;
         </div>
+        
         <Value />
         <Logos />
 
-        <div id="apply" className="bg-gray-100 py-4">
+        <div id="apply" className="bg-gray-800 py-4">
           <section className="max-w-6xl mx-auto my-24 ">
             <div className="m-8">
-              <h1 className="text-gray-900 text-4xl text-center font-bold tracking-tighter my-4">
-                Interested? Applications now open.
+              <h1 className="text-gray-100 text-4xl text-center font-bold tracking-tight my-4">
+                Interested? Applications now open. ⚡
               </h1>
-              <p className="text-gray-700 text-xl text-center my-2 max-w-3xl mx-auto">
+              <p className="text-gray-200 text-xl text-center my-2 max-w-3xl mx-auto">
                 Build and launch a real product over three months this summer.
-                We can't wait to see what you build. Limited spots available.
+                We can't wait to see what you build. <i>Limited spots available.</i>
               </p>
             </div>
 
             <div className="max-w-md mx-auto m-3">
-              <label className="mb-4 font-bold tracking-tight text-xl">
+              <label className="mb-4 text-gray-200 font-bold text-xl">
                 Email
               </label>
               <input
-                className="mt-2 w-full text-xl outline-none bg-transparent border py-3 rounded-md shadow-sm mr-3 px-3 leading-tight focus:outline-none"
+                className="text-white mt-2 w-full text-xl outline-none bg-transparent border-2 border-gray-400 py-3 rounded-md shadow-sm mr-3 px-3 leading-tight focus:outline-none"
                 type="text"
                 placeholder="billymagic@umich.edu"
                 value={email}
@@ -100,7 +107,7 @@ export default function IndexPage() {
         </div>
         <FAQ
           titleUppercase="Questions? We got you"
-          color="blue"
+          color="gray"
           subtitleBold="Frequently Asked Questions"
           listOfQA={[
             {
@@ -118,7 +125,7 @@ export default function IndexPage() {
             {
               question: "What experience do I need?",
               answer:
-                "You don't need formal experience, but you need to be ambitious and ready to learn. You also need to put in the time required (10+ hours a week) this summer to make this product a reality. This will be one of your most impactful experiences, and the time you spend on your project should reflect that. ",
+                "You don't need formal experience, but you need to be ambitious and/or ready to learn. You also need to put in the time required (10+ hours a week) this summer to make this product a reality. This will be one of your most impactful experiences, and the time you spend on your project should reflect that. ",
             },
             {
               question: "Do I need an idea?",
@@ -151,7 +158,6 @@ export default function IndexPage() {
               answer:
                 "We expect the initial cohort to be 4-5 teams and each team to be ~2-3 people.               ",
             },
-
             {
               question: "Is this free?",
               answer:
@@ -164,17 +170,15 @@ export default function IndexPage() {
           ]}
         />
 
-        {/* Team component */}
-
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill="#2459DA"
+            fill="#1F2937"
             fill-opacity="1"
             d="M0,288L48,282.7C96,277,192,267,288,261.3C384,256,480,256,576,224C672,192,768,128,864,117.3C960,107,1056,149,1152,144C1248,139,1344,85,1392,58.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
 
-        <div className="bg-gradient-to-r from-gray-900 to-black">
+        <div className="bg-gray-800">
           <p className="footer text-gray-200 text-center py-8">
             &copy; 2021 V1 | team@v1michigan.com
           </p>

@@ -12,10 +12,10 @@ const Logos = () => {
     "https://assets.website-files.com/602e8e4411398ca20cfcafd3/602e9b9b76b7e733a5d6e66f_Ava%20Labs.%20Black%20(1).svg",
     "https://contrarycap.com/images/horizontal-color@3x.svg",
     "https://media-exp1.licdn.com/dms/image/C4D0BAQG0zLRkBUUDJw/company-logo_200_200/0/1600537109115?e=1628726400&v=beta&t=abDN46R9st8WH-O6v1zHO5QHuDpM7xImMQ0czWL-DoM",
-    "https://www.finsmes.com/wp-content/uploads/2019/02/kleiner-perkins-black.png",
+    "https://squaremill.com/images/clients/kleiner-perkins.svg",
   ];
   return (
-    <section className="max-w-4xl text-center mx-auto my-48">
+    <section className="max-w-screen-xl text-center mx-auto my-48">
       <div className="m-8">
         <h1 className="text-gray-900 text-4xl font-bold tracking-tighter my-4">
           We're backed by and come from the best.
@@ -29,7 +29,7 @@ const Logos = () => {
       <div className="flex flex-wrap justify-center">
         {images.map((image) => (
           <div key={image} className="m-2">
-            <img className="h-16 m-2 max-w-xs" src={image}></img>
+            <img className="h-12 m-3 max-w-xs rounded-md" src={image}></img>
           </div>
         ))}
       </div>
