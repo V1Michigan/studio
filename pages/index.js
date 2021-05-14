@@ -74,12 +74,12 @@ export default function IndexPage() {
               </p>
             </div>
 
-            <div className="max-w-md mx-auto m-3">
-              <label className="mb-4 text-gray-200 font-bold text-xl">
+            <div className="max-w-md mx-auto m-3 text-center">
+              <label className="mb-1 text-gray-200 font-bold text-xl block">
                 Email
               </label>
               <input
-                className="text-white mt-2 w-full text-xl outline-none bg-transparent border-2 border-gray-400 py-3 rounded-md shadow-sm mr-3 px-3 leading-tight focus:outline-none"
+                className="text-white mt-2 w-3/4 text-base outline-none bg-transparent border-2 border-gray-400 py-3 rounded-md shadow-sm px-3 leading-tight focus:outline-none"
                 type="text"
                 placeholder="billymagic@umich.edu"
                 value={email}
@@ -90,7 +90,7 @@ export default function IndexPage() {
             </div>
             <div className="text-center">
               <button
-                className="text-xl font-bold outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
+                className="text-xl m-2 font-bold outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
                 onClick={() => {
                   console.log(email);
                   if (sendEmail(email)) {
@@ -165,7 +165,7 @@ export default function IndexPage() {
           ]}
         />
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg className="m-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#1F2937"
             fill-opacity="1"
@@ -174,7 +174,7 @@ export default function IndexPage() {
         </svg>
 
         <div className="bg-gray-800">
-          <p className="footer text-gray-200 text-center py-8">
+          <p className="footer text-gray-200 text-center py-8 m-0">
             &copy; <b>2021 V1 | team@v1michigan.com</b>
           </p>
         </div>
