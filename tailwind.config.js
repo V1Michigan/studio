@@ -12,9 +12,9 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
-        "trippy-slow": "trippy 15s linear infinite",
-        "trippy2-slow": "trippy2 25s linear infinite",
-        "trippy3-slow": "trippy3 40s linear infinite"
+        "trippy-slow": "trippy 5s linear infinite",
+        "trippy2-slow": "trippy2 10s linear infinite",
+        "trippy3-slow": "trippy3 15s linear infinite"
       },
       keyframes: {
         trippy: {

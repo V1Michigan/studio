@@ -38,13 +38,11 @@ export default function IndexPage() {
 
         <Header />
 
-        <div className="p-8 max-w-6xl mx-auto text-center mt-6">
+        <div className="p-8 max-w-6xl mx-auto text-center mt-16">
           <div className="max-w-xl flex justify-center align-items mx-auto">
-            <div>
               <div className="text-gray-700 rounded-full border-8 animate-trippy-slow border-black h-16 w-16"></div>
               <div className="text-gray-700 rounded-full border-8 animate-trippy2-slow border-black h-16 w-16"></div>
               <div className="text-gray-700 rounded-full border-8 animate-trippy3-slow border-black h-16 w-16"></div>
-            </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-gray-900 mt-8">
             A one-of-a-kind product studio.
@@ -139,7 +137,7 @@ export default function IndexPage() {
             {
               question: "What is the time commitment?",
               answer:
-                "You can expect to commit an average of 5-10 hours a week. The program runs from May 23rd, 2020 to the end of August. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
+                "You can expect to commit an average of 5-10 hours a week. The program runs from May 23rd, 2021 to the end of August. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
             },
             {
               question: "What does this program consist of?",
@@ -175,13 +173,13 @@ export default function IndexPage() {
           viewBox="0 0 1440 320"
         >
           <path
-            fill="#1F2937"
+            fill="#263d6c"
             fill-opacity="1"
             d="M0,288L48,282.7C96,277,192,267,288,261.3C384,256,480,256,576,224C672,192,768,128,864,117.3C960,107,1056,149,1152,144C1248,139,1344,85,1392,58.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
 
-        <div className="bg-gray-800">
+        <div className="background">
           <p className="footer text-gray-200 text-center py-8 m-0">
             &copy; <b>2021 V1 | team@v1michigan.com</b>
           </p>
