@@ -40,7 +40,7 @@ export default function IndexPage() {
 
         <div className="p-8 max-w-6xl mx-auto">
           <h1 className="text-6xl font-bold tracking-tighter text-gray-900 mt-8">
-            A one-of-a-kind product studio at the University of Michigan.
+            A one-of-a-kind product studio.
           </h1>
           <h2 className="text-3xl tracking-tight text-gray-700 my-4">
             Software is eating the world, and we're here to embrace it. Join us
@@ -52,7 +52,6 @@ export default function IndexPage() {
           &darr;
         </div>
         <Value />
-
         <Logos />
 
         <div id="apply" className="bg-gray-100 py-4">
@@ -63,7 +62,7 @@ export default function IndexPage() {
               </h1>
               <p className="text-gray-700 text-xl text-center my-2 max-w-3xl mx-auto">
                 Build and launch a real product over three months this summer.
-                We can't wait to see what you build.
+                We can't wait to see what you build. Limited spots available.
               </p>
             </div>
 

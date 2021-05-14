@@ -143,7 +143,7 @@ export default function Application() {
       <div className="bg-gradient-to-t from-blue-100 to-blue-200 p-4">
         <div className="p-4 flex justify-center md:justify-start">
           <Link href="/">
-            <img className="logo mr-3 ml-4 rounded-sm" src="/clear_logo.png" />
+            <img className="logo mr-3 ml-4 rounded-sm cursor-pointer	" src="/clear_logo.png" />
           </Link>
         </div>
         <div>
@@ -151,17 +151,20 @@ export default function Application() {
             V1 Product Studio Application 🚀
           </h1>
           <p className="text-center font-bold text-black-800 text-2xl">
-            Ideate, Design, Build, Ship
+            You've got the will, we've got the way.
           </p>
           <div className="max-w-lg mx-auto p-4 text-base">
             {" "}
-            <p className="text-black-800">Applications are due ___</p>
-            <p className="text-black-800 mt-2">
-              Build a real product by summer's end.
+            <p className="text-black-800">
+              Applications are due April 18th, 2021 at 11:59 PM ET
             </p>
             <p className="text-black-800 mt-2">
-              Product Studio is meant for the most ambitious builders at
-              Michigan. We look forward to reading your application.
+              Build and launch a real product by summer's end.
+            </p>
+            <p className="text-black-800 mt-2">
+              V1 Product Studio is open to any ambitious Michigan student
+              builder. We look forward to reading your application. The program
+              runs from May 23rd, 2021 to the end of August.
             </p>
           </div>
         </div>
@@ -231,7 +234,7 @@ export default function Application() {
               <Input
                 label="Grad Year"
                 id="year"
-                placeholder="2022, 2025, ..."
+                placeholder="2022, 2023, 2024, 2025, ..."
                 handleInputChange={handleInputChange}
                 value={event.year}
                 submitted={submitted}
@@ -265,7 +268,7 @@ export default function Application() {
                 submitted={submitted}
               />
               <TextArea
-                label="Drop some links of things you're proud of!"
+                label="Drop a few links of things you're proud of. (Website, portfolio, GitHub, LinkedIn, Twitter, etc.)"
                 id="links"
                 handleInputChange={handleInputChange}
                 value={event.links}
@@ -273,7 +276,7 @@ export default function Application() {
               />
 
               <TextArea
-                label="Do you want to tell us anything more?"
+                label="Anything else you'd like to share?"
                 id="else"
                 handleInputChange={handleInputChange}
                 value={event.else}
@@ -284,12 +287,12 @@ export default function Application() {
               <div className="px-3 mt-10 mb-6">
                 <button
                   type="submit"
-                  className={`bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-75 text-white font-bold py-3 px-4 rounded shadow mb-4 ${
+                  className={`bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-75 text-white py-3 px-4 rounded shadow mb-4 ${
                     submitted ? "hidden" : "block"
                   } mx-auto`}
                   disabled={submitted}
                 >
-                  It's time to build ›
+                  Let's go 🚀 
                 </button>
                 <button
                   type="button"
