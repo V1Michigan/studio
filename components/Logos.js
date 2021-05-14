@@ -15,7 +15,11 @@ const Logos = () => {
     "https://squaremill.com/images/clients/kleiner-perkins.svg",
   ];
   return (
-    <section className="max-w-screen-xl text-center mx-auto my-48">
+    <section className="max-w-screen-xl text-center mx-auto my-36">
+      <div className="max-w-md p-4 mx-auto">
+        <img className="tilt shadow-md rounded-sm border-4" src="/gif.gif"></img>
+      </div>
+
       <div className="m-8">
         <h1 className="text-gray-900 text-4xl font-bold tracking-tighter my-4">
           We're backed by and come from the best.

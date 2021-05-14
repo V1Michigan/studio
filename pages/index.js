@@ -36,7 +36,7 @@ export default function IndexPage() {
         <SEO />
 
         <Header />
-        <StockTicker text="IT'S TIME TO BUILD™"></StockTicker>
+        {/* <StockTicker text="IT'S TIME TO BUILD™"></StockTicker> */}
 
         <div className="p-8 max-w-6xl mx-auto text-center mt-6">
           <div className="max-w-xl flex justify-center mx-auto">
@@ -57,19 +57,20 @@ export default function IndexPage() {
         <div className="animate-bounce text-center font-bold mb-20 text-3xl text-gray-700">
           &darr;
         </div>
-        
+
         <Value />
         <Logos />
 
         <div id="apply" className="bg-gray-800 py-4">
           <section className="max-w-6xl mx-auto my-24 ">
             <div className="m-8">
-              <h1 className="text-gray-100 text-4xl text-center font-bold tracking-tight my-4">
+              <h1 className="text-white text-4xl text-center font-bold tracking-tight my-4">
                 Interested? Applications now open. ⚡
               </h1>
-              <p className="text-gray-200 text-xl text-center my-2 max-w-3xl mx-auto">
+              <p className="text-white text-xl text-center my-2 max-w-3xl mx-auto">
                 Build and launch a real product over three months this summer.
-                We can't wait to see what you build. <i>Limited spots available.</i>
+                We can't wait to see what you build.{" "}
+                <i>Limited spots available.</i>
               </p>
             </div>
 
@@ -89,7 +90,7 @@ export default function IndexPage() {
             </div>
             <div className="text-center">
               <button
-                className="text-xl outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
+                className="text-xl font-bold outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
                 onClick={() => {
                   console.log(email);
                   if (sendEmail(email)) {
@@ -125,7 +126,7 @@ export default function IndexPage() {
             {
               question: "What experience do I need?",
               answer:
-                "You don't need formal experience, but you need to be ambitious and/or ready to learn. You also need to put in the time required (10+ hours a week) this summer to make this product a reality. This will be one of your most impactful experiences, and the time you spend on your project should reflect that. ",
+                "You don't need formal experience, but you need to be ambitious and/or ready to learn. You also need to put in the time required (5-10 hours a week) this summer to make this product a reality. This will be one of your most impactful experiences, and the time you spend on your project should reflect that. ",
             },
             {
               question: "Do I need an idea?",
@@ -141,11 +142,6 @@ export default function IndexPage() {
               question: "What does this program consist of?",
               answer:
                 "We’ll ideate on ideas with you, write up a spec, and spend the rest of the time building out an MVP and helping you launch it on various channels including but not limited to Product Hunt, Reddit, and more and hopefully, in the end you’ll have real users! ",
-            },
-            {
-              question: "What will I learn?",
-              answer:
-                "You will learn how to make wireframes and turn them into prototypes in Figma. After completion, you'll have gained the skills, community, and confidence to bring any idea to life!",
             },
             {
               question:
@@ -180,7 +176,7 @@ export default function IndexPage() {
 
         <div className="bg-gray-800">
           <p className="footer text-gray-200 text-center py-8">
-            &copy; 2021 V1 | team@v1michigan.com
+            &copy; <b>2021 V1 | team@v1michigan.com</b>
           </p>
         </div>
       </main>

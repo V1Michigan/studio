@@ -4,7 +4,7 @@ const Value = () => (
       <div className="text-center mb-8">
         <div className="flex justify-center mb-4 ">
           <img
-            className="w-24 opacity-75 animate-spin-slow"
+            className="w-24 opacity-75 animate-spin-slow text-gray-700"
             src="/atom.svg"
           />
         </div>

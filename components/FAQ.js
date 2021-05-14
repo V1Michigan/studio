@@ -24,11 +24,11 @@ export default function FAQ({ titleUppercase, subtitleBold, listOfQA, color }) {
               (
                 <div
                   key={item.question}
-                  className={`p-2 relative hover:bg-gray-100 m-2`}
+                  className={`p-1 relative hover:bg-gray-100 m-2`}
                 >
                   <button
                     type="button"
-                    className={`block md:w-full text-left md:text-2xl sm:text-md font-bold tracking-tight text-gray-900 mb-2 focus:outline-none`}
+                    className={`block md:w-full text-left md:text-2xl sm:text-base font-bold tracking-tight text-gray-900 mb-2 focus:outline-none`}
                     onClick={() => {
                       dropdownOpen.find((element) => element == index)
                         ? setdropdownOpen(
