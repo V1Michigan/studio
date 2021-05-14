@@ -34,7 +34,7 @@ export default function IndexPage() {
     <>
       <main>
         <SEO />
-        <StockTicker text="IT'S TIME TO BUILD™"></StockTicker>
+        {/* <StockTicker text="IT'S TIME TO BUILD™"></StockTicker> */}
 
         <Header />
 

@@ -2,9 +2,9 @@ const Value = () => (
   <section className="text-gray-700 body-font bg-gray-100 py-16">
     <div className="container px-5 py-2 mx-auto">
       <div className="text-center mb-8">
-        <div className="flex justify-center mb-4 ">
+        <div className="flex justify-center mb-4 h-32">
           <img
-            className="w-24 opacity-75 animate-spin-slow text-black-900"
+            className="opacity-75 animate-spin-slow text-black-900"
             src="/atom.svg"
           />
         </div>
