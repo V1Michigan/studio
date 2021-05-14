@@ -61,7 +61,7 @@ export default function IndexPage() {
         <Value />
         <Logos />
 
-        <div id="apply" className="bg-gray-800 py-4">
+        <div id="apply" className="background py-4">
           <section className="max-w-6xl mx-auto my-24 ">
             <div className="m-8">
               <h1 className="text-white text-4xl text-center font-bold tracking-tight my-4">
@@ -75,7 +75,7 @@ export default function IndexPage() {
             </div>
 
             <div className="max-w-md mx-auto m-3 text-center">
-              <label className="mb-1 text-gray-200 font-bold text-xl block">
+              <label className="mb-1 text-gray-200 font-bold text-xl block text-center">
                 Email
               </label>
               <input
@@ -102,6 +102,10 @@ export default function IndexPage() {
               >
                 Let's do this ›
               </button>
+              <p className="italic text-white mt-2">
+                You'll receive a calendar invite for our mass meeting <br/> and be
+                taken to our application page.
+              </p>
             </div>
           </section>
         </div>
@@ -165,7 +169,11 @@ export default function IndexPage() {
           ]}
         />
 
-        <svg className="m-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg
+          className="m-0"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
           <path
             fill="#1F2937"
             fill-opacity="1"

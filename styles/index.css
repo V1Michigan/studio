@@ -51,3 +51,27 @@
 .tilt2 {
   transform: perspective(400px) rotateY(2deg);
 }
+.background {
+  background: linear-gradient(148deg, #030303, #0b3274);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 2s ease infinite;
+  -moz-animation: AnimationName 2s ease infinite;
+  animation: AnimationName 2s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:71% 0%}
+  50%{background-position:30% 100%}
+  100%{background-position:71% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:71% 0%}
+  50%{background-position:30% 100%}
+  100%{background-position:71% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:71% 0%}
+  50%{background-position:30% 100%}
+  100%{background-position:71% 0%}
+}
