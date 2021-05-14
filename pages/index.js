@@ -38,13 +38,11 @@ export default function IndexPage() {
 
         <Header />
 
-        <div className="p-8 max-w-6xl mx-auto text-center mt-6">
+        <div className="p-8 max-w-6xl mx-auto text-center mt-16">
           <div className="max-w-xl flex justify-center align-items mx-auto">
-            <div>
-              <div className="text-gray-700 rounded-full border-8 animate-trippy-slow border-black h-16 w-16"></div>
-              <div className="text-gray-700 rounded-full border-8 animate-trippy2-slow border-black h-16 w-16"></div>
-              <div className="text-gray-700 rounded-full border-8 animate-trippy3-slow border-black h-16 w-16"></div>
-            </div>
+            <div className="text-gray-700 rounded-full border-8 animate-trippy-slow border-black h-16 w-16"></div>
+            <div className="text-gray-700 rounded-full border-8 animate-trippy2-slow border-black h-16 w-16"></div>
+            <div className="text-gray-700 rounded-full border-8 animate-trippy3-slow border-black h-16 w-16"></div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-gray-900 mt-8">
             A one-of-a-kind product studio.
@@ -103,8 +101,8 @@ export default function IndexPage() {
                 Let's do this ›
               </button>
               <p className="italic text-white mt-2">
-                You'll receive a calendar invite for our mass meeting <br/> and be
-                taken to our application page.
+                You'll receive a calendar invite for our mass meeting <br /> and
+                be taken to our application page.
               </p>
             </div>
           </section>
@@ -139,7 +137,7 @@ export default function IndexPage() {
             {
               question: "What is the time commitment?",
               answer:
-                "You can expect to commit an average of 5-10 hours a week. The program runs from May 23rd, 2020 to the end of August. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
+                "You can expect to commit an average of 5-10 hours a week. The program runs from May 23rd, 2021 to the end of August. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
             },
             {
               question: "What does this program consist of?",
@@ -168,8 +166,7 @@ export default function IndexPage() {
             },
           ]}
         />
-
-        <div className="bg-gray-800">
+        <div className="background">
           <p className="footer text-gray-200 text-center py-8 m-0">
             &copy; <b>2021 V1 | team@v1michigan.com</b>
           </p>
