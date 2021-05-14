@@ -39,11 +39,11 @@ export default function IndexPage() {
         {/* <StockTicker text="IT'S TIME TO BUILD™"></StockTicker> */}
 
         <div className="p-8 max-w-6xl mx-auto text-center mt-6">
-          <div className="max-w-xl flex justify-center mx-auto">
+          <div className="max-w-xl flex justify-center align-items mx-auto">
             <div>
               <div className="text-gray-700 rounded-full border-8 animate-trippy-slow border-black h-16 w-16"></div>
-              <div className="text-gray-700 rounded-full border-8 animate-trippy2-slow border-black h-14 w-14"></div>
-              <div className="text-gray-700 rounded-full border-8 animate-trippy3-slow border-black h-12 w-12"></div>
+              <div className="text-gray-700 rounded-full border-8 animate-trippy2-slow border-black h-16 w-16"></div>
+              <div className="text-gray-700 rounded-full border-8 animate-trippy3-slow border-black h-16 w-16"></div>
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-gray-900 mt-8">
