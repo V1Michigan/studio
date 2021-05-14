@@ -3,12 +3,97 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import axios from "axios";
+import SEO from "../components/SEO";
+
+const Input = ({
+  label,
+  id,
+  placeholder,
+  handleInputChange,
+  value,
+  submitted,
+  required,
+}) => (
+  <div className="px-3 my-4">
+    <label className="block text-gray-800 text-lg mb-2" htmlFor="name">
+      {label} {required ? <span className="text-red-800">*</span> : null}
+      {required ? (
+        <input
+          name={id}
+          id={id}
+          className="mt-2 appearance-none block w-full bg-gray-000 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
+          type="text"
+          placeholder={placeholder}
+          onChange={handleInputChange}
+          value={value}
+          required
+          disabled={submitted}
+        />
+      ) : (
+        <input
+          name={id}
+          id={id}
+          className="mt-2 appearance-none block w-full bg-gray-000 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
+          type="text"
+          placeholder={placeholder}
+          onChange={handleInputChange}
+          value={value}
+          disabled={submitted}
+        />
+      )}
+    </label>
+  </div>
+);
+
+const TextArea = ({
+  label,
+  id,
+  submitted,
+  required,
+  value,
+  handleInputChange,
+}) => (
+  <div className="px-3 my-4">
+    <label className="block text-gray-800 text-lg mb-2" htmlFor="name">
+      {label} {required ? <span className="text-red-800">*</span> : null}
+      {required ? (
+        <textarea
+          name={id}
+          id={id}
+          className="mt-2 appearance-none block w-full bg-gray-000 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
+          type="text"
+          onChange={handleInputChange}
+          value={value}
+          required
+          disabled={submitted}
+          style={{ resize: "none" }}
+        />
+      ) : (
+        <textarea
+          name={id}
+          id={id}
+          className="mt-2 appearance-none block w-full bg-gray-000 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
+          type="text"
+          onChange={handleInputChange}
+          value={value}
+          disabled={submitted}
+          style={{ resize: "none" }}
+        />
+      )}
+    </label>
+  </div>
+);
 
 export default function Application() {
   const [event, setEvent] = useState({
     name: "",
     email: "",
     referral: "",
+    new: "",
+    project: "",
+    links: "",
+    year: "",
+    else: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [referrer, setReferrer] = useState(null);
@@ -50,27 +135,15 @@ export default function Application() {
   };
   return (
     <main>
-      <Head>
-        <title>V1 x Y Combinator | University of Michigan</title>
-        <link rel="icon" href="/favicon.ico?v=1" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta
-          name="description"
-          content="V1 and Y Combinator present a fireside chat event with YC President Geoff Ralston"
-        />
-        <meta name="og:title" content="V1 Community | University of Michigan" />
-        <meta
-          name="og:description"
-          content="V1 and Y Combinator present a fireside chat event with YC President Geoff Ralston"
-        />
-        <meta property="og:image" content="/yc-event.jpg" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <SEO
+        title="V1 Product Studio Application | University of Michigan"
+        description="A one-of-a-kind product studio at the University of Michigan. Want in? Apply here."
+      />
 
       <div className="bg-gradient-to-t from-blue-100 to-blue-200 p-4">
         <div className="p-4 flex justify-center md:justify-start">
           <Link href="/">
-            <img className="logo mr-3 rounded-sm" src="/apple-touch-icon.png" />
+            <img className="logo mr-3 ml-4 rounded-sm" src="/clear_logo.png" />
           </Link>
         </div>
         <div>
@@ -82,14 +155,13 @@ export default function Application() {
           </p>
           <div className="max-w-lg mx-auto p-4 text-base">
             {" "}
-            <p className="text-black-800">
-              Applications are due ___
-            </p>
+            <p className="text-black-800">Applications are due ___</p>
             <p className="text-black-800 mt-2">
               Build a real product by summer's end.
             </p>
             <p className="text-black-800 mt-2">
-              Product Studio is meant for the most ambitious builders at Michigan. We look forward to reading your application.
+              Product Studio is meant for the most ambitious builders at
+              Michigan. We look forward to reading your application.
             </p>
           </div>
         </div>
@@ -126,80 +198,102 @@ export default function Application() {
                   name: "",
                   email: "",
                   referral: "",
+                  new: "",
+                  project: "",
+                  links: "",
+                  year: "",
+                  else: "",
                 });
               });
           }}
         >
           <div>
             <div className="w-full bg-white shadow-md rounded p-4">
-              <div className="px-3 my-4">
-                <label
-                  className="block text-gray-800 text-lg mb-2"
-                  htmlFor="name"
-                >
-                  Full Name <span className="text-red-800">*</span>
-                  <input
-                    name="name"
-                    id="name"
-                    className="mt-2 appearance-none block w-full bg-gray-000 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
-                    type="text"
-                    placeholder="Billy Magic"
-                    onChange={handleInputChange}
-                    value={event.name}
-                    required
-                    disabled={submitted}
-                  />
-                </label>
-              </div>
-              <div className="px-3 my-4">
-                <label
-                  className="block text-gray-800 text-lg mb-2"
-                  htmlFor="email"
-                >
-                  Email <span className="text-red-800">*</span>
-                  <input
-                    name="email"
-                    id="email"
-                    className="mt-2 appearance-none block w-full bg-gray-000 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
-                    type="text"
-                    placeholder="Email"
-                    onChange={handleInputChange}
-                    value={event.email}
-                    required
-                    disabled={submitted}
-                  />
-                </label>
-              </div>
-              <div className="px-3 my-4">
-                <label className="block text-gray-800 text-lg mb-2">
-                  How did you hear about this event?{" "}
-                  <span className="text-red-800">*</span>
-                  <input
-                    name="referral"
-                    id="referral"
-                    className="mt-2 appearance-none block w-full bg-gray-000 text-gray-900 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
-                    type="text"
-                    placeholder="V1 Newsletter, etc."
-                    onChange={handleInputChange}
-                    value={event.referral}
-                    required
-                    disabled={submitted}
-                  />
-                </label>
-              </div>
+              <Input
+                label="Full Name"
+                id="name"
+                placeholder="Billy Magic"
+                handleInputChange={handleInputChange}
+                value={event.name}
+                submitted={submitted}
+                required={true}
+              />
+              <Input
+                label="Email"
+                id="email"
+                placeholder="billy@umich.edu"
+                handleInputChange={handleInputChange}
+                value={event.email}
+                submitted={submitted}
+                required={true}
+              />
+
+              <Input
+                label="Grad Year"
+                id="year"
+                placeholder="2022, 2025, ..."
+                handleInputChange={handleInputChange}
+                value={event.year}
+                submitted={submitted}
+                required={true}
+              />
+
+              <Input
+                label="How did you hear about this?"
+                id="referral"
+                placeholder="V1 Newsletter, etc."
+                handleInputChange={handleInputChange}
+                value={event.referral}
+                submitted={submitted}
+              />
+
+              <TextArea
+                label="Tell us about a project you've worked on! Why did you do it? Note: project is an extremely general term — nearly anything goes, and it does not need to be technical"
+                id="project"
+                handleInputChange={handleInputChange}
+                value={event.project}
+                required={true}
+                submitted={submitted}
+              />
+
+              <TextArea
+                label="Teach us something new! We just want to see your passion shine through."
+                id="new"
+                handleInputChange={handleInputChange}
+                value={event.new}
+                required={true}
+                submitted={submitted}
+              />
+              <TextArea
+                label="Drop some links of things you're proud of!"
+                id="links"
+                handleInputChange={handleInputChange}
+                value={event.links}
+                submitted={submitted}
+              />
+
+              <TextArea
+                label="Do you want to tell us anything more?"
+                id="else"
+                handleInputChange={handleInputChange}
+                value={event.else}
+                submitted={submitted}
+              />
+
+              {/* SUBMIT BUTTON */}
               <div className="px-3 mt-10 mb-6">
                 <button
                   type="submit"
-                  className={`bg-gradient-to-r from-yellow-200 to-yellow-500 hover:opacity-75 text-gray-800 font-semibold py-3 px-4 rounded shadow mb-4 ${
+                  className={`bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-75 text-white font-bold py-3 px-4 rounded shadow mb-4 ${
                     submitted ? "hidden" : "block"
                   } mx-auto`}
                   disabled={submitted}
                 >
-                  Continue to YC Registration ›
+                  It's time to build ›
                 </button>
                 <button
                   type="button"
-                  className={`bg-gray-500 font-semibold text-gray-800 py-3 px-4 rounded shadow mb-4 ${
+                  className={`bg-blue-700 font-semibold text-gray-100 py-3 px-4 rounded shadow mb-4 ${
                     submitted ? "block" : "hidden"
                   } mx-auto`}
                   disabled

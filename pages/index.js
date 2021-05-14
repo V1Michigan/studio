@@ -2,7 +2,7 @@ import StockTicker from "../components/StockTicker";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { sendEmail } from "../components/functions";
-import HiddenHead from "../components/HiddenHead";
+import SEO from "../components/SEO";
 import Header from "../components/Header";
 import Value from "../components/Value";
 import Logos from "../components/Logos";
@@ -33,7 +33,7 @@ export default function IndexPage() {
   return (
     <>
       <main>
-        <HiddenHead />
+        <SEO />
 
         <Header />
         <StockTicker text="IT'S TIME TO BUILD™"></StockTicker>

@@ -50,22 +50,7 @@ export default function YC() {
   };
   return (
     <main>
-      <Head>
-        <title>V1 x Y Combinator | University of Michigan</title>
-        <link rel="icon" href="/favicon.ico?v=1" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta
-          name="description"
-          content="V1 and Y Combinator present a fireside chat event with YC President Geoff Ralston"
-        />
-        <meta name="og:title" content="V1 Community | University of Michigan" />
-        <meta
-          name="og:description"
-          content="V1 and Y Combinator present a fireside chat event with YC President Geoff Ralston"
-        />
-        <meta property="og:image" content="/yc-event.jpg" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <SEO title="V1 x Y Combinator | University of Michigan" description="V1 and Y Combinator present a fireside chat event with YC President Geoff Ralston" image="/yc-event.jpg" />
       <div className="bg-gradient-to-r from-gray-900 to-black p-4">
         <div className="p-4 flex justify-center md:justify-start">
           <Link href="/">
