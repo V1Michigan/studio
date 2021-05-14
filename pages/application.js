@@ -64,7 +64,7 @@ export default function Application() {
         </div>
         <div>
           <h1 className="text-4xl text-center tracking-tight text-gray-900 p-4 max-w-2xl mx-auto font-bold">
-            V1 Product Studio Application 🚀
+            V1 Product Studio Signup 🚀
           </h1>
           <p className="text-center font-bold text-gray-800 text-2xl">
             It's time to build.
@@ -100,7 +100,7 @@ export default function Application() {
             </div>
             <div className="text-center">
               <button
-                className="text-base md:text-xl m-2 font-semibold outline-none text-white py-2 px-4 rounded-md bg-blue-700 hover:opacity-75"
+                className="text-base md:text-lg m-2 font-semibold outline-none text-white py-2 px-4 rounded-md bg-blue-700 hover:opacity-75"
                 onClick={() => {
                   console.log(email);
                   if (sendEmail(email)) {
