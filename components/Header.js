@@ -31,7 +31,7 @@ const Header = () => (
       </div>
       <div className="mt-6 text-center">
         <a href="#apply" className="text-base md:text-xl font-bold outline-none text-white py-3 px-6 rounded-md bg-blue-700 hover:opacity-75">
-          Mass Meeting Tonight ›
+          Apply now ›
         </a>
 
         <p className="text-gray-100 text-sm italic mt-6 pb-2">

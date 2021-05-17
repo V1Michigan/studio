@@ -63,7 +63,7 @@ export default function IndexPage() {
           <section className="max-w-6xl mx-auto my-24 ">
             <div className="m-8">
               <h1 className="text-white text-4xl text-center font-bold tracking-tight my-4">
-                Interested? Mass Meeting Tonight. ⚡
+                Interested? Applications now open. ⚡
               </h1>
               <p className="text-white text-xl text-center my-2 max-w-3xl mx-auto">
                 Build and launch a real product over three months this summer.
