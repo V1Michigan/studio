@@ -101,8 +101,7 @@ export default function IndexPage() {
                 Let's do this ›
               </button>
               <p className="italic text-white mt-2">
-                You'll receive a calendar invite for our mass meeting <br /> and
-                be taken to our application page.
+                You'll be taken to our application page.
               </p>
             </div>
           </section>

@@ -35,7 +35,7 @@ const Header = () => (
         </a>
 
         <p className="text-gray-100 text-sm italic mt-6 pb-2">
-          Limited spots available, applications due 5/19 at 11:59 PM ET. <br/> Mass Meeting is 5/16 at 6 PM ET. <br/> Sign up to stay updated.
+          Limited spots available, applications due 5/19 at 11:59 PM ET.
         </p>
       </div>
     </div>

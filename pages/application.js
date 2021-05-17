@@ -113,8 +113,7 @@ export default function Application() {
                 Let's do this ›
               </button>
               <p className="italic text-grey-700 mt-2">
-                You'll receive a calendar invite for our mass meeting <br /> and
-                be taken to our application page.
+                You'll be taken to our application page.
               </p>
             </div>
           </div>
