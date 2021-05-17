@@ -184,7 +184,7 @@ export default function Apply() {
             <p className="text-gray-800 mt-2">
               V1 Product Studio is open to any ambitious Michigan student
               builder. We look forward to reading your application. The program
-              runs from May 23rd, 2021 to the end of August.
+              runs from May 23rd, 2021 to August 8th, 2021.
             </p>
           </div>
         </div>
