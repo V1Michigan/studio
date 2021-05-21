@@ -31,11 +31,12 @@ const Header = () => (
       </div>
       <div className="mt-6 text-center">
         <a href="#apply" className="text-base md:text-xl font-bold outline-none text-white py-3 px-6 rounded-md bg-blue-700 hover:opacity-75">
-          Apply now ›
+          Stay Posted ›
         </a>
 
         <p className="text-gray-100 text-sm italic mt-6 pb-2">
-          Limited spots available, applications due 5/19 at 11:59 PM ET.
+          Next cohort this fall
+          {/* Limited spots available, applications due 5/19 at 11:59 PM ET. */}
         </p>
       </div>
     </div>

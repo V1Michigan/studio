@@ -40,6 +40,13 @@
   }
 }
 
+.margin-on-sm {
+  @media (max-width: 768px) {
+    margin-top: 0 !important;
+  }
+  margin-top: -88px !important;
+}
+
 .logo {
   max-height: 50px;
 }

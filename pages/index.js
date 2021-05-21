@@ -1,7 +1,7 @@
 import StockTicker from "../components/StockTicker";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { sendEmail } from "../components/functions";
+import { pushToSheets } from "../components/functions";
 import SEO from "../components/SEO";
 import Header from "../components/Header";
 import Value from "../components/Value";
@@ -63,12 +63,12 @@ export default function IndexPage() {
           <section className="max-w-6xl mx-auto my-24 ">
             <div className="m-8">
               <h1 className="text-white text-4xl text-center font-bold tracking-tight my-4">
-                Interested? Applications due today! ⚡
+                Interested? Sign up to stay updated! ⚡
               </h1>
               <p className="text-white text-xl text-center my-2 max-w-3xl mx-auto">
-                Build and launch a real product over three months this summer.
+                Build and launch a real product over three months.
                 We can't wait to see what you build.{" "}
-                <i>Limited spots available.</i>
+                {/* <i>Limited spots available.</i> */}
               </p>
             </div>
 
@@ -91,8 +91,8 @@ export default function IndexPage() {
                 className="text-base md:text-xl m-2 font-bold outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
                 onClick={() => {
                   console.log(email);
-                  if (sendEmail(email)) {
-                    router.push("/apply");
+                  if (pushToSheets(email)) {
+                    router.push("/subscribed");
                   } else {
                     alert("Please enter a valid email address");
                   }
@@ -101,7 +101,7 @@ export default function IndexPage() {
                 Let's do this ›
               </button>
               <p className="italic text-white mt-2">
-                You'll be taken to our application page.
+                Next cohort is this fall
               </p>
             </div>
           </section>

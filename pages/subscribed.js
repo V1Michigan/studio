@@ -2,11 +2,11 @@ import Head from "next/head";
 import Link from "next/link";
 import SEO from "../components/SEO";
 
-export default function Submitted() {
+export default function Subscribed() {
   return (
-    <main className="h-screen">
+    <main className="h-screen ">
       <SEO
-        title="V1 Product Studio Submitted | University of Michigan"
+        title="V1 Product Studio Subscribed | University of Michigan"
         description="A one-of-a-kind product studio at the University of Michigan."
       />
       <div className="h-full bg-gradient-to-t from-blue-100 to-blue-200 p-4">
@@ -20,15 +20,15 @@ export default function Submitted() {
         </div>
         <div>
           <h1 className="text-5xl text-center tracking-tight text-gray-900 p-4 max-w-2xl mx-auto font-bold">
-            Application Submitted
+            You've subscribed
           </h1>
           <p className="text-center font-bold text-gray-800 text-3xl">
-            It's time to build.
+            This fall, it's time to build.
           </p>
           <div className="max-w-lg mx-auto p-4 text-2xl">
             {" "}
             <p className="text-center text-gray-800">
-             A confirmation email should be in your inbox in a few minutes! :) 
+             Feel free to send us updates at productstudio@umich.edu about what you're up to.
             </p>
           </div>
         </div>

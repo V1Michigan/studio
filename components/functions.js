@@ -60,6 +60,17 @@ export function sendAWSEmail(email, submit, first_name) {
   );
 }
 
+export function pushToSheets(email) {
+  console.log(email)
+  if (checkEmail(email)) {
+    pushEmailToSheets(email);
+    return true;
+  } else {
+    return false;
+  }
+
+}
+
 export function sendEmail(email) {
   if (checkEmail(email)) {
     pushEmailToSheets(email);
