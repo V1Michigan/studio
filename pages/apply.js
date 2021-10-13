@@ -102,6 +102,12 @@ const TextArea = ({
 );
 
 export default function Apply() {
+  const router = useRouter();
+  router.push('https://docs.google.com/forms/d/e/1FAIpQLScNXUE48KGGN0eE0WnHfNbHEKfG2-QkeoRUkEUhcb5keOBmcQ/viewform');
+  return;
+}
+
+/* 
   const [event, setEvent] = useState({
     name: "",
     email: "",
@@ -309,7 +315,7 @@ export default function Apply() {
                 submitted={submitted}
               />
 
-              {/* SUBMIT BUTTON */}
+              {/* SUBMIT BUTTON }
               <div className="px-3 mt-10 mb-6">
                 <button
                   type="submit"
@@ -360,5 +366,4 @@ export default function Apply() {
         </p>
       </div>
     </main>
-  );
-}
+  ); */
