@@ -8,6 +8,7 @@ import Value from "../components/Value";
 import Logos from "../components/Logos";
 import FAQ from "../components/FAQ";
 import Typist from "react-typist";
+import { sendEmail } from "../components/functions";
 
 export default function IndexPage() {
   const [email, setEmail] = useState("");
@@ -63,7 +64,7 @@ export default function IndexPage() {
           <section className="max-w-6xl mx-auto my-24 ">
             <div className="m-8">
               <h1 className="text-white text-4xl text-center font-bold tracking-tight my-4">
-                Interested? Sign up to stay updated! ⚡
+                Interested? Apply here! ⚡
               </h1>
               <p className="text-white text-xl text-center my-2 max-w-3xl mx-auto">
                 Build and launch a real product over three months.
@@ -92,7 +93,8 @@ export default function IndexPage() {
                 onClick={() => {
                   console.log(email);
                   if (pushToSheets(email)) {
-                    router.push("/subscribed");
+                    sendEmail(email);
+                    router.push("https://docs.google.com/forms/d/e/1FAIpQLScNXUE48KGGN0eE0WnHfNbHEKfG2-QkeoRUkEUhcb5keOBmcQ/viewform");
                   } else {
                     alert("Please enter a valid email address");
                   }
