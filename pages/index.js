@@ -49,7 +49,7 @@ export default function IndexPage() {
             A one-of-a-kind product studio.
           </h1>
           <h2 className="text-2xl md:text-3xl tracking-tight text-gray-700 my-4">
-            Join us this summer for a sprint to create world-class products that
+            Join us this fall for a sprint to create world-class products that
             solve real problems.
           </h2>
         </div>
@@ -116,7 +116,7 @@ export default function IndexPage() {
             {
               question: "What is this?",
               answer:
-                "V1 Product Studio is an initiative to bring together students of all experience levels and interest to build impactful software products. This isn't a startup accelerator or class, but a community-focused, ambitious program to bring project ideas to life. At the end of the summer, you and your team of 2-3 people will have successfully launched a product on Product Hunt, Reddit, etc. and have active users.",
+                "V1 Product Studio is an initiative to bring together students of all experience levels and interest to build impactful software products. This isn't a startup accelerator or class, but a community-focused, ambitious program to bring project ideas to life. At the end of the fall, you and your team of 2-3 people will have successfully launched a product on Product Hunt, Reddit, etc. and have active users.",
             },
             {
               question: "What is V1?",
@@ -128,7 +128,7 @@ export default function IndexPage() {
             {
               question: "What experience do I need?",
               answer:
-                "You don't need formal experience, but you need to be ambitious and/or ready to learn. You also need to put in the time required (5-10 hours a week) this summer to make this product a reality. This will be one of your most impactful experiences, and the time you spend on your project should reflect that. ",
+                "You don't need formal experience, but you need to be ambitious and/or ready to learn. You also need to put in the time required (5-10 hours a week) this fall to make this product a reality. This will be one of your most impactful experiences, and the time you spend on your project should reflect that. ",
             },
             {
               question: "Do I need an idea?",
@@ -147,7 +147,7 @@ export default function IndexPage() {
             },
             {
               question:
-                "Will we stop working on the projects after the summer?               ",
+                "Will we stop working on the projects after the fall?               ",
               answer:
                 "It’s up to you and the rest of your team! You are welcome to continue working on the projects - in fact, we encourage it! You can also choose to mentor the next cohort :)",
             },
