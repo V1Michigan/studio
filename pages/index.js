@@ -103,7 +103,7 @@ export default function IndexPage() {
                 Let's do this ›
               </button>
               <p className="italic text-white mt-2">
-                Next cohort is this fall
+                Happening this semester
               </p>
             </div>
           </section>
