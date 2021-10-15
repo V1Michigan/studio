@@ -35,7 +35,7 @@ const Header = () => (
         </a>
 
         <p className="text-gray-100 text-sm italic mt-6 pb-2">
-          Next cohort this fall
+          Happening this fall
           {/* Limited spots available, applications due 5/19 at 11:59 PM ET. */}
         </p>
       </div>
