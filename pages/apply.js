@@ -102,9 +102,12 @@ const TextArea = ({
 );
 
 export default function Apply() {
-  const router = useRouter();
-  router.push('https://docs.google.com/forms/d/e/1FAIpQLScNXUE48KGGN0eE0WnHfNbHEKfG2-QkeoRUkEUhcb5keOBmcQ/viewform');
-  return;
+  return (
+  <script>
+      const router = useRouter();
+      router.push('https://docs.google.com/forms/d/e/1FAIpQLScNXUE48KGGN0eE0WnHfNbHEKfG2-QkeoRUkEUhcb5keOBmcQ/viewform');
+  </script>
+  )
 }
 
 /* 
