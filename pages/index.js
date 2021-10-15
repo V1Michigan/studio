@@ -9,7 +9,7 @@ import Logos from "../components/Logos";
 import FAQ from "../components/FAQ";
 import Typist from "react-typist";
 import { sendEmail } from "../components/functions";
-
+//The program runs from Late October 2021 to August 8th, 2021.
 export default function IndexPage() {
   const [email, setEmail] = useState("");
   const router = useRouter();
@@ -138,7 +138,7 @@ export default function IndexPage() {
             {
               question: "What is the time commitment?",
               answer:
-                "You can expect to commit an average of 5-10 hours a week. The program runs from May 23rd, 2021 to August 8th, 2021. You'll have a team lead — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
+                "You can expect to commit an average of 5-10 hours a week. The program begins Late October 2021. You'll have a team mentor — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
             },
             {
               question: "What does this program consist of?",
