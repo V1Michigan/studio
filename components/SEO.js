@@ -31,6 +31,16 @@ export default function SEO({ title, description, image }) {
 
       <meta property="og:image" content={image ? image : "/share.png?refresh=true"} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@v1michiga" />
+      <meta name="twitter:title" content={title ? title : "V1 Product Studio | University of Michigan"} />
+      <meta name="twitter:description" content={
+          description
+            ? description
+            : "V1 Product Studio is where you build world-class products for real users. Ship by the end of summer."
+        } />
+      <meta name="twitter:image" content={image ? image : "/share.png?refresh=true"} />
+  
     </Head>
   );
 }
