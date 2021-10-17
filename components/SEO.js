@@ -29,7 +29,7 @@ export default function SEO({ title, description, image }) {
         }
       />
 
-      <meta property="og:image" content={image ? image : "/share.png"} />
+      <meta property="og:image" content={image ? image : "/share.png?refresh=true"} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
   );
