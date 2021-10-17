@@ -17,7 +17,7 @@ export default function SEO({ title, description, image }) {
         content={
           description
             ? description
-            : "V1 Product Studio is where you build world-class products for real users. Ship by the end of summer."
+            : "V1 Product Studio is where you build world-class products for real users."
         }
       />
       <meta
@@ -25,7 +25,7 @@ export default function SEO({ title, description, image }) {
         content={
           description
             ? description
-            : "V1 Product Studio is where you build world-class products for real users. Ship by the end of summer."
+            : "V1 Product Studio is where you build world-class products for real users."
         }
       />
 
@@ -37,7 +37,7 @@ export default function SEO({ title, description, image }) {
       <meta name="twitter:description" content={
           description
             ? description
-            : "V1 Product Studio is where you build world-class products for real users. Ship by the end of summer."
+            : "V1 Product Studio is where you build world-class products for real users."
         } />
       <meta name="twitter:image" content={image ? image : "/share.png?refresh=true"} />
   
