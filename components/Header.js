@@ -35,8 +35,7 @@ const Header = () => (
         </a>
 
         <p className="text-gray-100 text-sm italic mt-6 pb-2">
-          Happening this fall
-          {/* Limited spots available, applications due 5/19 at 11:59 PM ET. */}
+          Limited spots available, applications due 10/29 at 11:59 PM ET.
         </p>
       </div>
     </div>

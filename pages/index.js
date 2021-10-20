@@ -103,7 +103,7 @@ export default function IndexPage() {
                 Let's do this ›
               </button>
               <p className="italic text-white mt-2">
-                Happening this semester
+              Limited spots available, applications due 10/29 at 11:59 PM ET.
               </p>
             </div>
           </section>
@@ -138,7 +138,7 @@ export default function IndexPage() {
             {
               question: "What is the time commitment?",
               answer:
-                "You can expect to commit an average of 5-10 hours a week. The program begins Late October 2021. You'll have a team mentor — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
+                "You can expect to commit an average of 5-10 hours a week. The program begins early November 2021. You'll have a team mentor — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
             },
             {
               question: "What does this program consist of?",
@@ -147,7 +147,7 @@ export default function IndexPage() {
             },
             {
               question:
-                "Will we stop working on the projects after the fall?               ",
+                "Will we stop working on the projects after this school year?               ",
               answer:
                 "It’s up to you and the rest of your team! You are welcome to continue working on the projects - in fact, we encourage it! You can also choose to mentor the next cohort :)",
             },

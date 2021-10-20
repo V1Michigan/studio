@@ -1,3 +1,4 @@
+import { MentorComponent } from "./mentors";
 const Logos = () => {
   const images = [
     "https://brand.umich.edu/assets/brand/downloads/um-logos/block_m_kit/block_m-hex.png",
@@ -10,8 +11,6 @@ const Logos = () => {
     "https://www.algorand.com/assets/media-kit/logos/full/png/algorand_full_logo_black.png",
     "https://assets.website-files.com/602e8e4411398ca20cfcafd3/602e9b9b76b7e733a5d6e66f_Ava%20Labs.%20Black%20(1).svg",
     "https://contrarycap.com/images/horizontal-color@3x.svg",
-    "https://media-exp1.licdn.com/dms/image/C4D0BAQG0zLRkBUUDJw/company-logo_200_200/0/1600537109115?e=1628726400&v=beta&t=abDN46R9st8WH-O6v1zHO5QHuDpM7xImMQ0czWL-DoM",
-    "https://squaremill.com/images/clients/kleiner-perkins.svg",
   ];
   return (
     <section className="max-w-screen-xl text-center mx-auto my-36">
@@ -29,6 +28,7 @@ const Logos = () => {
           venture funds.{" "}
         </p>
       </div>
+      <MentorComponent />
       <div className="flex flex-wrap justify-center">
         {images.map((image) => (
           <div key={image} className="m-2">
