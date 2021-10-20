@@ -105,7 +105,7 @@ export default function IndexPage() {
                 Let's do this ›
               </button>
               <p className="italic text-white mt-2">
-              Limited spots available, applications due 10/19 at 11:59 PM ET.
+              Limited spots available, applications due 10/24 at 11:59 PM ET.
               </p>
             </div>
           </section>
