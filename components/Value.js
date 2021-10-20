@@ -3,21 +3,26 @@ const products = [
     name: "Decode",
     description:
       "Finding the best SWE internships beyond Big Tech is difficult. Find startup SWE roles and bring you clarity to the recruiting process.",
+    link: "https://decode.so",
   },
+
   {
     name: "Rally",
     description:
       "We all struggle with staying accountable. As your accountability buddy, Rally grew and was used by several active users.",
+    link: "https://rallyyy.com",
   },
   {
     name: "Feedbee",
     description:
       "The Latest Buzz on your Newsletter! FeedBee provides Newsletter Writers with detailed analytics.",
+    link: "https://welcome.tryfeedbee.com",
   },
   {
     name: "College Chats",
     description:
       "Connecting high school and college students to help high schoolers find their dream college.",
+    link: "",
   },
 ];
 
@@ -45,7 +50,11 @@ const Value = () => (
             <div className="mx-auto w-1/2">
               <div className="border rounded-sm m-4">
                 <h1 className="py-4 font-bold text-3xl tracking-tighter ">
-                  <a className="hover:opacity-50 cursor-pointer">
+                  <a
+                    href={product.link}
+                    target="_blank"
+                    className="hover:opacity-50 cursor-pointer"
+                  >
                     {product.name} ›
                   </a>
                 </h1>

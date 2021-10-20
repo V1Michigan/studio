@@ -1,17 +1,17 @@
 const Projects = () => {
   return (
-    <section className="text-gray-700 body-font bg-gray-100 py-16">
+    <section className="text-gray-700 body-font background pb-16 pt-8">
       <div className="container px-5 py-2 mx-auto">
-        <div className="text-center mb-8">
+        <div className="text-center">
           <br />
-          <h1 className="text-4xl md:text-5xl font-bold title-font tracking-tight text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold title-font tracking-tight text-gray-200 mb-4">
             What's in it for you?
           </h1>
-          <p className="md:text-2xl text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600 tracking-tight">
+          <p className="md:text-2xl text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-300 tracking-tight">
             V1 Product Studio is where you can level up, rapidly.
           </p>
           <div className="flex mt-6 justify-center">
-            <div className="w-16 h-1 rounded-full bg-gray-900 inline-flex"></div>
+            <div className="w-16 h-1 rounded-full bg-gray-100 inline-flex"></div>
           </div>
         </div>
       </div>
@@ -23,10 +23,10 @@ const Projects = () => {
               🚀
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-2xl title-font font-bold tracking-tight mb-3">
+              <h2 className="text-gray-200 text-2xl title-font font-bold tracking-tight mb-3">
                 Builder's mindset
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base text-gray-100">
                 Learn and develop a personal framework for you to apply your
                 interests in either engineering, design, business, or growth,
                 and take ideas from zero to one. This mindset can only be taught
@@ -39,10 +39,10 @@ const Projects = () => {
               💼
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-2xl title-font font-bold tracking-tight mb-3">
+              <h2 className="text-gray-200 text-2xl title-font font-bold tracking-tight mb-3">
                 Practical experience
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base text-gray-100">
                 Gain practical skills in your field of interest by working on
                 your summer-long project with a 2-3 other people with
                 complementary skills. Launch your project on Product Hunt and
@@ -56,10 +56,10 @@ const Projects = () => {
               🤝
             </div>
             <div className="flex-grow">
-              <h2 className="text-gray-900 text-2xl title-font font-bold tracking-tight mb-3">
+              <h2 className="text-gray-200 text-2xl title-font font-bold tracking-tight mb-3">
                 Unique opportunities
               </h2>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base text-gray-100">
                 We'll help connect you to any opportunity you're interested in —
                 whether that's a fellowship, working on your own company, or
                 joining a high-growth startup. You'll gain access to a community
