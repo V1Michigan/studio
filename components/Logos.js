@@ -28,7 +28,7 @@ const Logos = () => {
           venture funds.{" "}
         </p>
       </div>
-      <MentorComponent />
+      {/* <MentorComponent /> */}
       <div className="flex flex-wrap justify-center">
         {images.map((image) => (
           <div key={image} className="m-2">

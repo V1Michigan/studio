@@ -5,6 +5,7 @@ import { pushToSheets } from "../components/functions";
 import SEO from "../components/SEO";
 import Header from "../components/Header";
 import Value from "../components/Value";
+import Projects from "../components/Projects";
 import Logos from "../components/Logos";
 import FAQ from "../components/FAQ";
 import Typist from "react-typist";
@@ -58,6 +59,7 @@ export default function IndexPage() {
         </div>
 
         <Value />
+        <Projects/>
         <Logos />
 
         <div id="apply" className="background py-4">
@@ -103,7 +105,7 @@ export default function IndexPage() {
                 Let's do this ›
               </button>
               <p className="italic text-white mt-2">
-              Limited spots available, applications due 10/29 at 11:59 PM ET.
+              Limited spots available, applications due 10/19 at 11:59 PM ET.
               </p>
             </div>
           </section>
