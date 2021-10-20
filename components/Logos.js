@@ -13,12 +13,12 @@ const Logos = () => {
     "https://contrarycap.com/images/horizontal-color@3x.svg",
   ];
   return (
-    <section className="max-w-screen-xl text-center mx-auto my-16">
+    <section className="max-w-screen-xl text-center mx-auto my-8">
       <div className="max-w-md p-4 mx-auto">
         <img className="tilt shadow-md rounded-sm border-4" src="/gif.gif"></img>
       </div>
 
-      <div className="mb-8 mt-2">
+      <div className="m-8">
         <h1 className="text-gray-900 text-4xl font-bold tracking-tighter my-4">
           We're backed by and come from the best.
         </h1>
@@ -28,7 +28,7 @@ const Logos = () => {
           venture funds.{" "}
         </p>
       </div>
-      {/* <MentorComponent /> */}
+      <MentorComponent />
       <div className="flex flex-wrap justify-center">
         {images.map((image) => (
           <div key={image} className="m-2">
