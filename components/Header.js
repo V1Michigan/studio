@@ -35,7 +35,7 @@ const Header = () => (
         </a>
 
         <p className="text-gray-100 text-sm italic mt-6 pb-2">
-          Limited spots available, applications due 10/30 at 11:59 PM ET.
+         Applications are now closed.
         </p>
       </div>
     </div>
