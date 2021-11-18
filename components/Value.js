@@ -38,7 +38,7 @@ const Value = () => (
         </div>
         <br />
         <h1 className="text-4xl md:text-5xl font-bold title-font tracking-tight text-gray-900 mb-4">
-          It's time to build.
+          It's time to design real world products.
         </h1>
         <p className="md:text-2xl text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600 tracking-tight">
           An initiative for Michigan students to cultivate the builder’s mindset
