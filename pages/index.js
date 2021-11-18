@@ -96,7 +96,7 @@ export default function IndexPage() {
                   console.log(email);
                   if (pushToSheets(email)) {
                     sendEmail(email);
-                    router.push("https://docs.google.com/forms/d/e/1FAIpQLScNXUE48KGGN0eE0WnHfNbHEKfG2-QkeoRUkEUhcb5keOBmcQ/viewform");
+                    router.push("https://forms.gle/HAmKEdeFJdD1JiL58");
                   } else {
                     alert("Please enter a valid email address");
                   }
