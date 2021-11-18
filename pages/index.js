@@ -94,8 +94,7 @@ export default function IndexPage() {
                 className="text-base md:text-xl m-2 font-bold outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
                 onClick={() => {
                   console.log(email);
-                  if (pushToSheets(email)) {
-                    sendEmail(email);
+                  if (sendEmail(email)) {
                     router.push("https://forms.gle/HAmKEdeFJdD1JiL58");
                   } else {
                     alert("Please enter a valid email address");
