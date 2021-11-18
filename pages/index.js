@@ -104,7 +104,7 @@ export default function IndexPage() {
                 Let's do this ›
               </button>
               <p className="italic text-white mt-2">
-              Applications are now closed.
+              Design apps due Nov 23
               </p>
             </div>
           </section>
@@ -139,7 +139,7 @@ export default function IndexPage() {
             {
               question: "What is the time commitment?",
               answer:
-                "You can expect to commit an average of 5-10 hours a week. The program begins early November 2021. You'll have a team mentor — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
+                "You can expect to commit an average of 5-10 hours a week. The program begins early December 2021. You'll have a team mentor — who's an experienced builder — and they'll help you and your team stay on track to build and launch your product.",
             },
             {
               question: "What does this program consist of?",

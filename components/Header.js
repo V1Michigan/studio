@@ -35,7 +35,7 @@ const Header = () => (
         </a>
 
         <p className="text-gray-100 text-sm italic mt-6 pb-2">
-         Applications are now closed.
+         Design apps due Nov 23
         </p>
       </div>
     </div>
