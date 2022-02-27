@@ -30,12 +30,13 @@ const Header = () => (
         </div>
       </div>
       <div className="mt-6 text-center">
-        <a href="#apply" className="text-base md:text-xl font-bold outline-none text-white py-3 px-6 rounded-md bg-blue-700 hover:opacity-75">
+        <a  /*href="#apply"*/  className="text-base md:text-xl font-bold outline-none text-white py-3 px-6 rounded-md bg-blue-700 hover:opacity-75"
+        className="text-base md:text-xl m-2 font-bold outline-none text-white py-3 px-6 rounded-md bg-blue-700 /*hover:opacity-75*/ opacity-50 cursor-not-allowed">
           Apply Now ›
         </a>
-
+        
         <p className="text-gray-100 text-sm italic mt-6 pb-2">
-         Design apps due Nov 23
+        Apps are now closed — stay tuned for info about the next Studio cohort
         </p>
       </div>
     </div>
