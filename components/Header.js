@@ -1,18 +1,3 @@
-import styled from "styled-components";
-
-const TrippyDivStyle = {
-  position: "relative",
-  left: "10%",
-};
-
-const TrippyDiv2 = styled.div`
-  position: relative;
-  background-color: rgba(255, 255, 255, 0);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-`;
-
 const Header = () => (
   <div className="flex justify-center items-center background px-12 py-24 shadow-md">
     <div className="max-w-screen-2xl">
