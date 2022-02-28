@@ -90,9 +90,8 @@ export default function Application() {
                   "-moz-appearance": "none",
                   appearance: "none",
                 }}
-                /*className="text-grey-800 mt-2 w-3/4 text-base outline-none bg-transparent border-2 border-gray-600 py-3 rounded-md shadow-sm px-3 leading-tight focus:outline-none"*/
-                type="text"
                 className="text-white mt-2 w-3/4 text-base outline-none bg-transparent border-2 border-gray-400 py-3 rounded-md shadow-sm px-3 leading-tight focus:outline-none opacity-50 cursor-not-allowed"
+                type="text"
                 placeholder="billymagic@umich.edu"
                 value={email}
                 onChange={(e) => {
@@ -103,8 +102,7 @@ export default function Application() {
             </div>
             <div className="text-center">
               <button
-                /*className="text-base md:text-lg m-2 font-semibold outline-none text-white py-2 px-4 rounded-md bg-blue-700 hover:opacity-75"*/
-                className="text-base md:text-xl m-2 font-bold outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 /*hover:opacity-75*/ opacity-50 cursor-not-allowed"
+                className="text-base md:text-lg m-2 font-semibold outline-none text-white py-2 px-4 rounded-md bg-blue-700 /*hover:opacity-75*/ opacity-50 cursor-not-allowed"
                 disabled
                 onClick={() => {
                   if (pushToSheets(email)) {

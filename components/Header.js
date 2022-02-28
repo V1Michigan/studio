@@ -30,8 +30,7 @@ const Header = () => (
         </div>
       </div>
       <div className="mt-6 text-center">
-        <a  /*href="#apply"*/  className="text-base md:text-xl font-bold outline-none text-white py-3 px-6 rounded-md bg-blue-700 hover:opacity-75"
-        className="text-base md:text-xl m-2 font-bold outline-none text-white py-3 px-6 rounded-md bg-blue-700 /*hover:opacity-75*/ opacity-50 cursor-not-allowed">
+        <a  /*href="#apply"*/  className="text-base md:text-xl font-bold outline-none text-white py-3 px-6 rounded-md bg-blue-700 /*hover:opacity-75*/ opacity-50 cursor-not-allowed">
           Apply Now ›
         </a>
         
