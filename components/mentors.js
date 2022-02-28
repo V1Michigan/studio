@@ -27,7 +27,7 @@
     {
       image: "/community/varun.jpg",
       name: "Varun Jindal",
-      role: "Founder @ StuddyBuddies",
+      role: "Founder @ StudyBuddies",
       link: "https://www.linkedin.com/in/varun-jindal/",
     },
     {

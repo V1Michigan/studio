@@ -80,18 +80,20 @@ export default function IndexPage() {
                 Email
               </label>
               <input
-                className="text-white mt-2 w-3/4 text-base outline-none bg-transparent border-2 border-gray-400 py-3 rounded-md shadow-sm px-3 leading-tight focus:outline-none"
+                className="text-white mt-2 w-3/4 text-base outline-none bg-transparent border-2 border-gray-400 py-3 rounded-md shadow-sm px-3 leading-tight focus:outline-none opacity-50 cursor-not-allowed"
                 type="text"
                 placeholder="billymagic@umich.edu"
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
+                disabled
               />
             </div>
             <div className="text-center">
               <button
-                className="text-base md:text-xl m-2 font-bold outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 hover:opacity-75"
+                className="text-base md:text-xl m-2 font-bold outline-none text-white py-2 px-4 rounded-md bg-gradient-to-r from-blue-600 to-blue-700 /*hover:opacity-75*/ opacity-50 cursor-not-allowed"
+                disabled
                 onClick={() => {
                   console.log(email);
                   if (sendEmail(email)) {
@@ -104,7 +106,7 @@ export default function IndexPage() {
                 Let's do this ›
               </button>
               <p className="italic text-white mt-2">
-              Design apps due Nov 23
+              Apps are now closed — stay tuned for info about the next Studio cohort
               </p>
             </div>
           </section>
@@ -170,7 +172,9 @@ export default function IndexPage() {
         />
         <div className="background">
           <p className="footer text-gray-200 text-center py-8 m-0">
-            &copy; <b>2021 V1 | team@v1michigan.com</b>
+            &copy; <b>2022 V1 | <a href="mailto:team@v1michigan.com"> team@v1michigan.com
+              </a>
+           </b>
           </p>
         </div>
       </main>
