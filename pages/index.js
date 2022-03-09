@@ -10,6 +10,7 @@ import Logos from "../components/Logos";
 import FAQ from "../components/FAQ";
 import Typist from "react-typist";
 import { sendEmail } from "../components/functions";
+import NavbarBuilder from "../components/NavBar";
 //The program runs from Late October 2021 to August 8th, 2021.
 export default function IndexPage() {
   const [email, setEmail] = useState("");
@@ -37,6 +38,7 @@ export default function IndexPage() {
       <main>
         <SEO />
         {/* <StockTicker text="IT'S TIME TO BUILD™"></StockTicker> */}
+        <NavbarBuilder/>
 
         <Header />
 
