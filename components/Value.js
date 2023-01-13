@@ -3,7 +3,7 @@ const products = [
     name: "Decode",
     description:
       "Finding the best SWE internships beyond Big Tech is difficult. Find startup SWE roles and bring you clarity to the recruiting process.",
-    link: "https://decode.so",
+    link: "https://decode-red.vercel.app",
   },
 
   {
